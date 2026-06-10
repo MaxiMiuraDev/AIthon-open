@@ -61,6 +61,21 @@ export const PoisArraySchema = z.array(PoiSchema).min(1);
 export const RutasArraySchema = z.array(RutaSchema).min(1);
 
 // ──────────────────────────────────────────────
+// Guard de drift (compile-time)
+// Si un schema Zod y su tipo a mano en @/types divergen, esto NO compila
+// (Exact<...> pasa a ser `false` y no es asignable a `true`). Costo cero en runtime.
+// ──────────────────────────────────────────────
+
+type Exact<A, B> = (<T>() => T extends A ? 1 : 2) extends <T>() => T extends B ? 1 : 2
+  ? true
+  : false;
+
+const _driftPoi: Exact<z.infer<typeof PoiSchema>, POI> = true;
+const _driftRuta: Exact<z.infer<typeof RutaSchema>, Ruta> = true;
+const _driftClima: Exact<z.infer<typeof ClimaSchema>, Clima> = true;
+void [_driftPoi, _driftRuta, _driftClima];
+
+// ──────────────────────────────────────────────
 // Loader interno
 // ──────────────────────────────────────────────
 
