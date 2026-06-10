@@ -1,0 +1,11 @@
+const fs = require('fs'); const path = require('path'); const { z } = require('zod');
+const dir = process.env.DATA_DIR ? path.resolve(process.env.DATA_DIR) : path.join(__dirname, '..', 'public', 'data');
+const files = ['pois.json', 'actividades.json', 'clima_mock.json', 'comerciantes.json'];
+const json = Object.fromEntries(files.map((file) => [file, JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'))]));
+z.array(z.object({ id: z.string().min(1), intereses: z.array(z.string()), duracion_min: z.number().positive() })).min(1).parse(json['pois.json']);
+z.array(z.object({ poi_id: z.string().min(1), dias_cerrado: z.array(z.string()) })).min(1).parse(json['actividades.json']);
+z.object({ escenario_activo: z.enum(['soleado', 'lluvia', 'viento']), escenarios: z.record(z.unknown()) }).parse(json['clima_mock.json']);
+z.array(z.object({ id: z.string().min(1), nombre: z.string().min(1), rubro: z.string().min(1) })).parse(json['comerciantes.json']);
+const ids = new Set(json['pois.json'].map((poi) => poi.id)); const invalidas = json['actividades.json'].filter((actividad) => !ids.has(actividad.poi_id));
+if (invalidas.length) throw new Error(`Actividades con POI inexistente: ${invalidas.map((a) => a.poi_id).join(', ')}`);
+console.log(`Datos válidos: ${ids.size} POIs, ${json['actividades.json'].length} actividades, ${json['comerciantes.json'].length} comerciantes.`);

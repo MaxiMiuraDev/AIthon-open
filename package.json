@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "npm --prefix Sendero-Fueguino run dev",
+    "build": "npm --prefix Sendero-Fueguino run build",
+    "start": "npm --prefix Sendero-Fueguino run start",
+    "validate-data": "npm --prefix Sendero-Fueguino run validate-data"
   },
   "dependencies": {
     "next": "^15.3.3",
