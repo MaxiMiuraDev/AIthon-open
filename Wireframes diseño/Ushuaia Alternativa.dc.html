@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesque:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:radial-gradient(140% 90% at 50% -10%,#123A4C 0%,#0A1E29 42%,#06141B 100%);font-family:'Hanken Grotesque',sans-serif;color:#EAF1F2;padding:44px 44px 90px;">
+
+  <!-- ===== TITLE BLOCK ===== -->
+  <div style="max-width:1280px;margin:0 auto 10px;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;">
+    <div style="display:flex;flex-direction:column;gap:10px;">
+      <div style="font-family:'Space Mono',monospace;font-size:13px;letter-spacing:3px;color:#6FC0D6;">54°48′S · 68°18′O — FIN DEL MUNDO</div>
+      <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:52px;line-height:.95;letter-spacing:-1.5px;">Ushuaia Alternativa</div>
+      <div style="font-size:19px;color:#9FB4BC;max-width:560px;">Descubrí la Ushuaia local antes de volver al barco — diseño de alta fidelidad, mobile-first.</div>
+    </div>
+    <!-- palette + type chips -->
+    <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start;">
+      <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#6F8893;">SISTEMA</div>
+      <div style="display:flex;gap:7px;">
+        <span style="width:30px;height:30px;border-radius:8px;background:#0C2330;border:1px solid rgba(255,255,255,.15);" title="navy"></span>
+        <span style="width:30px;height:30px;border-radius:8px;background:#4FA8C2;" title="glacier"></span>
+        <span style="width:30px;height:30px;border-radius:8px;background:#E07B2C;" title="warm/local"></span>
+        <span style="width:30px;height:30px;border-radius:8px;background:#F4F6F7;border:1px solid rgba(255,255,255,.15);" title="snow"></span>
+        <span style="width:30px;height:30px;border-radius:8px;background:#5E727B;" title="stone"></span>
+      </div>
+      <div style="font-size:13px;color:#9FB4BC;">Bricolage Grotesque · Hanken Grotesque · <span style="font-family:'Space Mono',monospace;">Space Mono</span></div>
+    </div>
+  </div>
+
+  <!-- ===== SCREENS RAIL ===== -->
+  <div style="max-width:1280px;margin:40px auto 0;display:flex;gap:48px;align-items:flex-start;flex-wrap:wrap;justify-content:center;">
+
+    <!-- ============ SCREEN 1 · INICIO ============ -->
+    <figure style="margin:0;display:flex;flex-direction:column;gap:18px;align-items:center;width:390px;flex-shrink:0;">
+      <div style="width:390px;height:858px;background:#0C2330;border-radius:48px;padding:9px;box-shadow:0 40px 80px -28px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.05);">
+        <div style="width:100%;height:100%;border-radius:40px;overflow:hidden;position:relative;display:flex;flex-direction:column;">
+          <!-- atmosphere -->
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,#0E3346 0%,#0B2230 46%,#0A1C26 100%);"></div>
+          <!-- mountains -->
+          <div style="position:absolute;left:0;right:0;bottom:34%;height:200px;background:#163A4C;clip-path:polygon(0 100%,0 56%,18% 22%,33% 52%,52% 8%,70% 46%,86% 24%,100% 58%,100% 100%);"></div>
+          <div style="position:absolute;left:0;right:0;bottom:34%;height:170px;background:#21536A;clip-path:polygon(0 100%,0 70%,22% 40%,40% 66%,58% 30%,78% 60%,100% 42%,100% 100%);"></div>
+          <!-- snow caps -->
+          <div style="position:absolute;left:48%;bottom:calc(34% + 120px);width:0;height:0;border-left:14px solid transparent;border-right:14px solid transparent;border-bottom:30px solid #DCEAEE;opacity:.9;"></div>
+          <!-- water -->
+          <div style="position:absolute;left:0;right:0;bottom:0;height:34%;background:linear-gradient(180deg,#0C2A39,#08161E);"></div>
+          <div style="position:absolute;left:0;right:0;bottom:34%;height:90px;background:linear-gradient(180deg,rgba(8,20,27,0),#0A1C26);"></div>
+
+          <!-- content -->
+          <div style="position:relative;z-index:2;flex:1;display:flex;flex-direction:column;padding:0 24px;">
+            <!-- status bar -->
+            <div style="height:30px;display:flex;align-items:center;justify-content:space-between;font-family:'Space Mono',monospace;font-size:11px;color:#CFE0E4;letter-spacing:.5px;"><span>9:41</span><span>5G ▰▰▰</span></div>
+            <!-- top row -->
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-top:14px;">
+              <div>
+                <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;line-height:.92;letter-spacing:-1px;color:#fff;">USHUAIA</div>
+                <div style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:5px;color:#6FC0D6;margin-top:2px;">ALTERNATIVA</div>
+              </div>
+              <div style="display:flex;gap:2px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:3px;font-family:'Space Mono',monospace;font-size:11px;">
+                <span style="padding:4px 8px;border-radius:999px;background:#4FA8C2;color:#06222C;font-weight:700;">ES</span>
+                <span style="padding:4px 8px;border-radius:999px;color:#9FB4BC;">EN</span>
+                <span style="padding:4px 8px;border-radius:999px;color:#9FB4BC;">PT</span>
+              </div>
+            </div>
+
+            <div style="flex:1;"></div>
+
+            <!-- bottom controls -->
+            <div style="padding-bottom:26px;display:flex;flex-direction:column;gap:16px;">
+              <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2.5px;color:#6FC0D6;">TU TIEMPO EN PUERTO</div>
+              <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:30px;line-height:1.02;letter-spacing:-1px;color:#fff;">¿Cuánto tiempo tenés en Ushuaia?</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:2px;">
+                <div style="border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:13px 14px;display:flex;flex-direction:column;gap:2px;">
+                  <span style="font-family:'Space Mono',monospace;font-size:22px;font-weight:700;color:#EAF1F2;">2h</span>
+                  <span style="font-size:12px;color:#8FA6AE;">Exprés</span>
+                </div>
+                <div style="border-radius:16px;background:#4FA8C2;border:1px solid #4FA8C2;padding:13px 14px;display:flex;flex-direction:column;gap:2px;box-shadow:0 10px 24px -8px rgba(79,168,194,.7);">
+                  <span style="font-family:'Space Mono',monospace;font-size:22px;font-weight:700;color:#06222C;">4h</span>
+                  <span style="font-size:12px;color:#0A3543;font-weight:600;">Clásico</span>
+                </div>
+                <div style="border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:13px 14px;display:flex;flex-direction:column;gap:2px;">
+                  <span style="font-family:'Space Mono',monospace;font-size:22px;font-weight:700;color:#EAF1F2;">6h</span>
+                  <span style="font-size:12px;color:#8FA6AE;">Completo</span>
+                </div>
+                <div style="border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);padding:13px 14px;display:flex;flex-direction:column;gap:2px;">
+                  <span style="font-family:'Space Mono',monospace;font-size:22px;font-weight:700;color:#EAF1F2;">8h</span>
+                  <span style="font-size:12px;color:#8FA6AE;">Día entero</span>
+                </div>
+              </div>
+              <div style="background:#F4F6F7;color:#0C2330;border-radius:15px;padding:16px;text-align:center;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 14px 30px -10px rgba(0,0,0,.5);">Armar mi recorrido <span style="font-family:'Space Mono',monospace;">→</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#EAF1F2;text-align:center;">01 · Inicio<br><span style="font-family:'Hanken Grotesque';font-size:14px;font-weight:400;color:#8FA6AE;">idioma + tiempo en puerto</span></figcaption>
+    </figure>
+
+    <!-- ============ SCREEN 2 · PREFERENCIAS ============ -->
+    <figure style="margin:0;display:flex;flex-direction:column;gap:18px;align-items:center;width:390px;flex-shrink:0;">
+      <div style="width:390px;height:858px;background:#0C2330;border-radius:48px;padding:9px;box-shadow:0 40px 80px -28px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.05);">
+        <div style="width:100%;height:100%;border-radius:40px;overflow:hidden;position:relative;display:flex;flex-direction:column;background:#F4F6F7;color:#15333F;">
+          <!-- status bar -->
+          <div style="height:30px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 24px;font-family:'Space Mono',monospace;font-size:11px;color:#15333F;letter-spacing:.5px;"><span>9:41</span><span>5G ▰▰▰</span></div>
+          <!-- header -->
+          <div style="padding:6px 22px 0;display:flex;align-items:center;justify-content:space-between;">
+            <span style="width:38px;height:38px;border-radius:12px;background:#fff;border:1px solid #E2E6E6;display:flex;align-items:center;justify-content:center;font-size:18px;color:#15333F;">‹</span>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#5E727B;">PASO 2 · PREFERENCIAS</span>
+            <span style="width:38px;height:38px;"></span>
+          </div>
+          <!-- scroll content -->
+          <div style="flex:1;overflow:hidden;padding:14px 22px 0;display:flex;flex-direction:column;gap:18px;">
+            <div>
+              <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:27px;line-height:1.02;letter-spacing:-.5px;">¿Qué te gustaría descubrir?</div>
+              <div style="font-size:13px;color:#5E727B;margin-top:5px;">Elegí lo que te interesa. Si no marcás nada, te mostramos todo.</div>
+            </div>
+            <!-- chips -->
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+              <span style="display:inline-flex;align-items:center;gap:6px;background:#E4F1F4;border:1.5px solid #4FA8C2;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:600;color:#0C3A48;">🍽 Gastronomía local</span>
+              <span style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid #E2E6E6;border-radius:999px;padding:8px 13px;font-size:13px;color:#3A535C;">🍷 Catas</span>
+              <span style="display:inline-flex;align-items:center;gap:6px;background:#E4F1F4;border:1.5px solid #4FA8C2;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:600;color:#0C3A48;">🏺 Cerámica</span>
+              <span style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid #E2E6E6;border-radius:999px;padding:8px 13px;font-size:13px;color:#3A535C;">🪵 Diseño fueguino</span>
+              <span style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid #E2E6E6;border-radius:999px;padding:8px 13px;font-size:13px;color:#3A535C;">🏛 Museos</span>
+              <span style="display:inline-flex;align-items:center;gap:6px;background:#E4F1F4;border:1.5px solid #4FA8C2;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:600;color:#0C3A48;">☕ Cafeterías</span>
+              <span style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid #E2E6E6;border-radius:999px;padding:8px 13px;font-size:13px;color:#3A535C;">🛍 Compras locales</span>
+              <span style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid #E2E6E6;border-radius:999px;padding:8px 13px;font-size:13px;color:#3A535C;">🏠 Experiencias indoor</span>
+              <span style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid #E2E6E6;border-radius:999px;padding:8px 13px;font-size:13px;color:#3A535C;">🌲 Naturaleza cercana</span>
+            </div>
+            <!-- accesibilidad -->
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#5E727B;">ACCESIBILIDAD</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px;">
+                <span style="display:inline-flex;align-items:center;gap:6px;background:#E4F1F4;border:1.5px solid #4FA8C2;border-radius:12px;padding:9px 13px;font-size:13px;font-weight:600;color:#0C3A48;">🚶 Caminata corta</span>
+                <span style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid #E2E6E6;border-radius:12px;padding:9px 13px;font-size:13px;color:#3A535C;">♿ Silla de ruedas</span>
+                <span style="display:inline-flex;align-items:center;gap:6px;background:#fff;border:1.5px solid #E2E6E6;border-radius:12px;padding:9px 13px;font-size:13px;color:#3A535C;">🫧 Bajo esfuerzo</span>
+              </div>
+            </div>
+            <!-- presupuesto -->
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#5E727B;">PRESUPUESTO</div>
+              <div style="display:flex;gap:6px;background:#fff;border:1px solid #E2E6E6;border-radius:14px;padding:5px;">
+                <span style="flex:1;text-align:center;padding:9px 0;border-radius:10px;font-size:13px;color:#3A535C;">Gratis</span>
+                <span style="flex:1;text-align:center;padding:9px 0;border-radius:10px;font-size:13px;font-weight:700;background:#0C2330;color:#fff;">Bajo</span>
+                <span style="flex:1;text-align:center;padding:9px 0;border-radius:10px;font-size:13px;color:#3A535C;">Medio</span>
+                <span style="flex:1;text-align:center;padding:9px 0;border-radius:10px;font-size:13px;color:#3A535C;">Premium</span>
+              </div>
+            </div>
+          </div>
+          <!-- sticky CTA -->
+          <div style="padding:14px 22px 26px;background:linear-gradient(180deg,rgba(244,246,247,0),#F4F6F7 30%);">
+            <div style="background:#0C2330;color:#fff;border-radius:15px;padding:16px;text-align:center;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;gap:8px;box-shadow:0 14px 30px -12px rgba(12,35,48,.6);">Ver recomendaciones <span style="font-family:'Space Mono',monospace;">→</span></div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#EAF1F2;text-align:center;">02 · Preferencias<br><span style="font-family:'Hanken Grotesque';font-size:14px;font-weight:400;color:#8FA6AE;">intereses · accesibilidad · presupuesto</span></figcaption>
+    </figure>
+
+    <!-- ============ SCREEN 3 · MAPA + CHATBOT ============ -->
+    <figure style="margin:0;display:flex;flex-direction:column;gap:18px;align-items:center;width:390px;flex-shrink:0;">
+      <div style="width:390px;height:858px;background:#0C2330;border-radius:48px;padding:9px;box-shadow:0 40px 80px -28px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.05);">
+        <div style="width:100%;height:100%;border-radius:40px;overflow:hidden;position:relative;display:flex;flex-direction:column;background:#0A1E29;color:#EAF1F2;">
+          <!-- status bar -->
+          <div style="height:30px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 24px;font-family:'Space Mono',monospace;font-size:11px;color:#CFE0E4;letter-spacing:.5px;z-index:5;"><span>9:41</span><span>5G ▰▰▰</span></div>
+          <!-- compact header -->
+          <div style="position:relative;z-index:5;padding:4px 18px 12px;display:flex;flex-direction:column;gap:10px;background:linear-gradient(180deg,#0C2536,#0A1E29);">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <span style="width:34px;height:34px;border-radius:11px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;font-size:17px;">‹</span>
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:16px;">Tu recorrido</span>
+              <span style="display:flex;align-items:center;gap:4px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:5px 10px;font-family:'Space Mono',monospace;font-size:11px;">🌐 ES</span>
+            </div>
+            <!-- context strip -->
+            <div style="display:flex;gap:7px;">
+              <span style="flex:1;display:flex;flex-direction:column;gap:1px;background:rgba(224,123,44,.14);border:1px solid rgba(224,123,44,.4);border-radius:11px;padding:7px 9px;"><span style="font-size:10px;color:#F0B080;">🌬 Viento fuerte</span><span style="font-family:'Space Mono',monospace;font-size:13px;font-weight:700;color:#F4D2B0;">−2°C</span></span>
+              <span style="flex:1;display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:11px;padding:7px 9px;"><span style="font-size:10px;color:#8FA6AE;">⏱ Restante</span><span style="font-family:'Space Mono',monospace;font-size:13px;font-weight:700;">05:42</span></span>
+              <span style="flex:1;display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:11px;padding:7px 9px;"><span style="font-size:10px;color:#8FA6AE;">📍 Al puerto</span><span style="font-family:'Space Mono',monospace;font-size:13px;font-weight:700;">220 m</span></span>
+            </div>
+          </div>
+
+          <!-- MAP -->
+          <div style="flex:1;position:relative;overflow:hidden;background:radial-gradient(120% 90% at 30% 20%,#10384A,#0A1E29 70%);">
+            <!-- contour rings -->
+            <div style="position:absolute;top:18%;left:34%;width:260px;height:260px;border:1px solid rgba(143,208,222,.10);border-radius:50%;transform:translate(-50%,-50%);"></div>
+            <div style="position:absolute;top:18%;left:34%;width:180px;height:180px;border:1px solid rgba(143,208,222,.13);border-radius:50%;transform:translate(-50%,-50%);"></div>
+            <div style="position:absolute;top:18%;left:34%;width:104px;height:104px;border:1px solid rgba(143,208,222,.16);border-radius:50%;transform:translate(-50%,-50%);"></div>
+            <!-- streets -->
+            <div style="position:absolute;top:0;bottom:0;left:46%;width:2px;background:rgba(255,255,255,.06);transform:rotate(6deg);"></div>
+            <div style="position:absolute;left:0;right:0;top:44%;height:2px;background:rgba(255,255,255,.06);transform:rotate(-3deg);"></div>
+            <div style="position:absolute;left:0;right:0;top:62%;height:2px;background:rgba(255,255,255,.05);transform:rotate(2deg);"></div>
+            <!-- water -->
+            <div style="position:absolute;left:0;right:0;bottom:0;height:24%;background:linear-gradient(180deg,#0B2D3D,#071620);"></div>
+            <div style="position:absolute;left:16px;bottom:12px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1px;color:#4E7A8A;">CANAL BEAGLE</div>
+            <!-- route -->
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;">
+              <polyline points="50,80 30,56 58,40 72,60" fill="none" stroke="#4FA8C2" stroke-width="2.5" stroke-dasharray="4 4" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke" opacity="0.85"></polyline>
+            </svg>
+            <!-- port marker -->
+            <div style="position:absolute;left:50%;top:80%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:3px;">
+              <span style="width:30px;height:30px;border-radius:50%;background:#0C2330;border:2px solid #DCEAEE;display:flex;align-items:center;justify-content:center;font-size:14px;">⚓</span>
+              <span style="font-family:'Space Mono',monospace;font-size:9px;letter-spacing:1px;color:#CFE0E4;background:rgba(8,20,27,.7);padding:1px 5px;border-radius:4px;">PUERTO</span>
+            </div>
+            <!-- stop 1 (glacier) -->
+            <span style="position:absolute;left:30%;top:56%;transform:translate(-50%,-50%);width:28px;height:28px;border-radius:50%;background:#4FA8C2;border:2px solid #DCEAEE;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;color:#06222C;box-shadow:0 6px 14px -4px rgba(0,0,0,.6);">1</span>
+            <!-- stop 2 (LOCAL warm) -->
+            <span style="position:absolute;left:58%;top:40%;transform:translate(-50%,-50%);width:30px;height:30px;border-radius:50%;background:#E07B2C;border:2px solid #FFE4C6;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;color:#3A1B05;box-shadow:0 6px 16px -3px rgba(224,123,44,.7);">2</span>
+            <!-- stop 3 (glacier) -->
+            <span style="position:absolute;left:72%;top:60%;transform:translate(-50%,-50%);width:28px;height:28px;border-radius:50%;background:#4FA8C2;border:2px solid #DCEAEE;display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:13px;font-weight:700;color:#06222C;box-shadow:0 6px 14px -4px rgba(0,0,0,.6);">3</span>
+
+            <!-- chatbot guide bubble -->
+            <div style="position:absolute;top:14px;left:14px;right:64px;display:flex;gap:9px;align-items:flex-start;">
+              <span style="width:34px;height:34px;border-radius:50%;background:#0C2330;border:2px solid #4FA8C2;display:flex;align-items:center;justify-content:center;flex-shrink:0;box-shadow:0 6px 14px -4px rgba(0,0,0,.6);"><span style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:11px solid #4FA8C2;"></span></span>
+              <div style="background:rgba(244,246,247,.96);color:#15333F;border-radius:14px 14px 14px 4px;padding:9px 11px;font-size:12px;line-height:1.3;box-shadow:0 8px 20px -6px rgba(0,0,0,.5);"><b style="font-family:'Bricolage Grotesque';font-size:11px;color:#0C3A48;">Fin · guía</b><br>Hoy hay viento fuerte, mejor priorizar experiencias <b>indoor</b> cerca del centro.</div>
+            </div>
+            <!-- guide FAB -->
+            <div style="position:absolute;right:14px;bottom:16px;display:flex;flex-direction:column;align-items:center;gap:5px;">
+              <span style="width:52px;height:52px;border-radius:50%;background:#4FA8C2;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 12px 26px -6px rgba(79,168,194,.8);">💬</span>
+            </div>
+          </div>
+
+          <!-- BOTTOM SHEET -->
+          <div style="background:#F4F6F7;color:#15333F;border-radius:22px 22px 0 0;margin-top:-18px;position:relative;z-index:4;padding:10px 0 24px;box-shadow:0 -10px 30px -8px rgba(0,0,0,.4);">
+            <div style="width:42px;height:5px;border-radius:3px;background:#CBD4D6;margin:0 auto 10px;"></div>
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:0 20px 11px;">
+              <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;">Recomendadas para vos</span>
+              <span style="font-family:'Space Mono',monospace;font-size:11px;color:#2C7E96;font-weight:700;">3 paradas →</span>
+            </div>
+            <!-- cards row -->
+            <div style="display:flex;gap:12px;padding:0 20px;overflow:hidden;">
+              <!-- card 1 LOCAL -->
+              <div style="width:228px;flex-shrink:0;background:#fff;border:1px solid #E2E6E6;border-radius:18px;overflow:hidden;box-shadow:0 8px 20px -12px rgba(12,35,48,.4);">
+                <div style="height:104px;position:relative;background:repeating-linear-gradient(45deg,#DBE6E9,#DBE6E9 9px,#D0DDE1 9px,#D0DDE1 18px);">
+                  <span style="position:absolute;top:9px;left:9px;display:flex;gap:5px;">
+                    <span style="background:#E07B2C;color:#fff;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;padding:3px 7px;border-radius:6px;letter-spacing:.5px;">LOCAL</span>
+                    <span style="background:rgba(12,35,48,.82);color:#CFE0E4;font-family:'Space Mono',monospace;font-size:9px;padding:3px 7px;border-radius:6px;">INDOOR</span>
+                  </span>
+                  <span style="position:absolute;bottom:8px;right:9px;font-family:'Space Mono',monospace;font-size:9px;color:#6B7E84;background:rgba(255,255,255,.7);padding:2px 6px;border-radius:5px;">FOTO · taller</span>
+                </div>
+                <div style="padding:11px 13px 13px;display:flex;flex-direction:column;gap:6px;">
+                  <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1px;color:#2C7E96;">CERÁMICA</span>
+                  <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;line-height:1.05;">Taller Lenga Cerámica</span>
+                  <div style="display:flex;gap:10px;font-family:'Space Mono',monospace;font-size:11px;color:#5E727B;margin-top:2px;"><span>📍 320 m</span><span>⏱ 45′</span><span>$$</span></div>
+                  <span style="margin-top:3px;display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#1E8A5B;font-weight:600;"><span style="width:7px;height:7px;border-radius:50%;background:#1E8A5B;"></span>Disponible ahora</span>
+                </div>
+              </div>
+              <!-- card 2 peek -->
+              <div style="width:228px;flex-shrink:0;background:#fff;border:1px solid #E2E6E6;border-radius:18px;overflow:hidden;box-shadow:0 8px 20px -12px rgba(12,35,48,.4);">
+                <div style="height:104px;position:relative;background:repeating-linear-gradient(45deg,#DBE6E9,#DBE6E9 9px,#D0DDE1 9px,#D0DDE1 18px);">
+                  <span style="position:absolute;top:9px;left:9px;display:flex;gap:5px;">
+                    <span style="background:#4FA8C2;color:#06222C;font-family:'Space Mono',monospace;font-size:9px;font-weight:700;padding:3px 7px;border-radius:6px;">CERCA</span>
+                  </span>
+                  <span style="position:absolute;bottom:8px;right:9px;font-family:'Space Mono',monospace;font-size:9px;color:#6B7E84;background:rgba(255,255,255,.7);padding:2px 6px;border-radius:5px;">FOTO · café</span>
+                </div>
+                <div style="padding:11px 13px 13px;display:flex;flex-direction:column;gap:6px;">
+                  <span style="font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1px;color:#2C7E96;">CAFETERÍA</span>
+                  <span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:15px;line-height:1.05;">Café del Faro</span>
+                  <div style="display:flex;gap:10px;font-family:'Space Mono',monospace;font-size:11px;color:#5E727B;margin-top:2px;"><span>📍 180 m</span><span>⏱ 30′</span><span>$</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#EAF1F2;text-align:center;">03 · Mapa + guía<br><span style="font-family:'Hanken Grotesque';font-size:14px;font-weight:400;color:#8FA6AE;">contexto · ruta · chatbot · recomendaciones</span></figcaption>
+    </figure>
+
+    <!-- ============ SCREEN 4 · DETALLE ============ -->
+    <figure style="margin:0;display:flex;flex-direction:column;gap:18px;align-items:center;width:390px;flex-shrink:0;">
+      <div style="width:390px;height:858px;background:#0C2330;border-radius:48px;padding:9px;box-shadow:0 40px 80px -28px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.05);">
+        <div style="width:100%;height:100%;border-radius:40px;overflow:hidden;position:relative;display:flex;flex-direction:column;background:#F4F6F7;color:#15333F;">
+          <!-- image header -->
+          <div style="height:262px;flex-shrink:0;position:relative;background:repeating-linear-gradient(45deg,#C9D7DB,#C9D7DB 11px,#BFD0D5 11px,#BFD0D5 22px);">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,27,.35) 0%,rgba(8,20,27,0) 30%,rgba(8,20,27,.1) 70%,rgba(244,246,247,1) 100%);"></div>
+            <!-- status bar -->
+            <div style="position:relative;height:30px;display:flex;align-items:center;justify-content:space-between;padding:0 24px;font-family:'Space Mono',monospace;font-size:11px;color:#fff;letter-spacing:.5px;"><span>9:41</span><span>5G ▰▰▰</span></div>
+            <div style="position:relative;padding:6px 18px;display:flex;align-items:center;justify-content:space-between;">
+              <span style="width:38px;height:38px;border-radius:12px;background:rgba(8,20,27,.5);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff;">‹</span>
+              <span style="width:38px;height:38px;border-radius:12px;background:rgba(8,20,27,.5);border:1px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-size:16px;color:#fff;">♥</span>
+            </div>
+            <span style="position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);font-family:'Space Mono',monospace;font-size:11px;color:#5E727B;background:rgba(255,255,255,.55);padding:3px 9px;border-radius:6px;">FOTO · taller de cerámica</span>
+            <!-- badges -->
+            <div style="position:absolute;left:18px;bottom:14px;display:flex;gap:6px;flex-wrap:wrap;">
+              <span style="background:#E07B2C;color:#fff;font-family:'Space Mono',monospace;font-size:10px;font-weight:700;padding:4px 9px;border-radius:7px;letter-spacing:.5px;">LOCAL</span>
+              <span style="background:rgba(12,35,48,.85);color:#CFE0E4;font-family:'Space Mono',monospace;font-size:10px;padding:4px 9px;border-radius:7px;">INDOOR</span>
+              <span style="background:rgba(12,35,48,.85);color:#CFE0E4;font-family:'Space Mono',monospace;font-size:10px;padding:4px 9px;border-radius:7px;">CERCA DEL PUERTO</span>
+            </div>
+          </div>
+          <!-- content -->
+          <div style="flex:1;overflow:hidden;padding:4px 22px 0;display:flex;flex-direction:column;gap:14px;">
+            <div>
+              <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:1.5px;color:#2C7E96;">CERÁMICA · TALLER</span>
+              <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;line-height:1.02;letter-spacing:-.5px;margin-top:3px;">Taller Lenga Cerámica</div>
+              <div style="font-size:13px;color:#5E727B;margin-top:4px;">Emprendimiento local · Ushuaia centro</div>
+            </div>
+            <!-- data grid -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+              <div style="background:#fff;border:1px solid #E2E6E6;border-radius:12px;padding:9px 11px;"><div style="font-size:11px;color:#5E727B;">⏱ Duración</div><div style="font-family:'Space Mono',monospace;font-size:14px;font-weight:700;margin-top:2px;">45 min</div></div>
+              <div style="background:#fff;border:1px solid #E2E6E6;border-radius:12px;padding:9px 11px;"><div style="font-size:11px;color:#5E727B;">📍 Del puerto</div><div style="font-family:'Space Mono',monospace;font-size:14px;font-weight:700;margin-top:2px;">320 m · 5′</div></div>
+              <div style="background:#fff;border:1px solid #E2E6E6;border-radius:12px;padding:9px 11px;"><div style="font-size:11px;color:#5E727B;">💰 Precio</div><div style="font-family:'Space Mono',monospace;font-size:14px;font-weight:700;margin-top:2px;">$$ · ~ARS 9.000</div></div>
+              <div style="background:#fff;border:1px solid #E2E6E6;border-radius:12px;padding:9px 11px;"><div style="font-size:11px;color:#5E727B;">♿ Accesibilidad</div><div style="font-family:'Space Mono',monospace;font-size:13px;font-weight:700;margin-top:2px;">Caminata corta</div></div>
+              <div style="background:#fff;border:1px solid #E2E6E6;border-radius:12px;padding:9px 11px;"><div style="font-size:11px;color:#5E727B;">🗣 Idiomas</div><div style="font-family:'Space Mono',monospace;font-size:14px;font-weight:700;margin-top:2px;">ES · EN</div></div>
+              <div style="background:#fff;border:1px solid #E2E6E6;border-radius:12px;padding:9px 11px;"><div style="font-size:11px;color:#5E727B;">🎟 Cupos hoy</div><div style="font-family:'Space Mono',monospace;font-size:14px;font-weight:700;margin-top:2px;color:#1E8A5B;">4 lugares</div></div>
+            </div>
+            <p style="margin:0;font-size:13.5px;line-height:1.5;color:#3A535C;">Una ceramista fueguina te muestra cómo el barro local toma forma con motivos del Canal Beagle. Llevás tu pieza de recuerdo. Cupos reducidos, ideal para días de viento.</p>
+            <div style="display:flex;align-items:center;gap:7px;font-size:12px;color:#5E727B;"><span style="display:inline-flex;align-items:center;gap:5px;background:#fff;border:1px solid #E2E6E6;border-radius:8px;padding:5px 9px;font-family:'Space Mono',monospace;font-size:11px;">🕒 10:00–18:00</span><span style="display:inline-flex;align-items:center;gap:5px;background:#E4F1F4;border:1px solid #4FA8C2;border-radius:8px;padding:5px 9px;font-family:'Space Mono',monospace;font-size:11px;color:#0C3A48;">🏠 Indoor</span></div>
+          </div>
+          <!-- action bar -->
+          <div style="padding:12px 18px 24px;background:linear-gradient(180deg,rgba(244,246,247,0),#F4F6F7 25%);display:flex;flex-direction:column;gap:9px;">
+            <div style="background:#0C2330;color:#fff;border-radius:14px;padding:15px;text-align:center;font-weight:800;font-size:15px;box-shadow:0 14px 30px -12px rgba(12,35,48,.6);">＋ Agregar a mi ruta</div>
+            <div style="display:flex;gap:9px;">
+              <div style="flex:1;background:#fff;border:1.5px solid #4FA8C2;color:#0C3A48;border-radius:14px;padding:12px;text-align:center;font-weight:700;font-size:13px;">📍 Cómo llegar</div>
+              <div style="flex:1;background:#fff;border:1.5px solid #E2E6E6;color:#15333F;border-radius:14px;padding:12px;text-align:center;font-weight:700;font-size:13px;">💬 Consultar al guía</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#EAF1F2;text-align:center;">04 · Detalle de actividad<br><span style="font-family:'Hanken Grotesque';font-size:14px;font-weight:400;color:#8FA6AE;">datos · accesibilidad · acciones</span></figcaption>
+    </figure>
+
+    <!-- ============ SCREEN 5 · RUTA ============ -->
+    <figure style="margin:0;display:flex;flex-direction:column;gap:18px;align-items:center;width:390px;flex-shrink:0;">
+      <div style="width:390px;height:858px;background:#0C2330;border-radius:48px;padding:9px;box-shadow:0 40px 80px -28px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.05);">
+        <div style="width:100%;height:100%;border-radius:40px;overflow:hidden;position:relative;display:flex;flex-direction:column;background:#F4F6F7;color:#15333F;">
+          <div style="height:30px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 24px;font-family:'Space Mono',monospace;font-size:11px;color:#15333F;"><span>9:41</span><span>5G ▰▰▰</span></div>
+          <div style="padding:6px 22px 0;display:flex;align-items:center;justify-content:space-between;">
+            <span style="width:38px;height:38px;border-radius:12px;background:#fff;border:1px solid #E2E6E6;display:flex;align-items:center;justify-content:center;font-size:18px;">‹</span>
+            <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#5E727B;">TU RUTA SUGERIDA</span>
+            <span style="width:38px;height:38px;border-radius:12px;background:#fff;border:1px solid #E2E6E6;display:flex;align-items:center;justify-content:center;font-size:15px;">↗</span>
+          </div>
+          <!-- summary -->
+          <div style="padding:12px 22px 4px;">
+            <div style="background:#0C2330;color:#fff;border-radius:16px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;">
+              <div><div style="font-family:'Space Mono',monospace;font-size:11px;color:#8FB8C6;letter-spacing:1px;">4h DISPONIBLES · 3 PARADAS</div><div style="font-family:'Bricolage Grotesque';font-weight:700;font-size:19px;margin-top:3px;">Regreso al puerto 13:18</div></div>
+              <div style="text-align:right;"><div style="font-family:'Space Mono',monospace;font-size:11px;color:#F0B080;">EMBARQUE</div><div style="font-family:'Space Mono',monospace;font-size:18px;font-weight:700;color:#F4D2B0;">13:00</div></div>
+            </div>
+          </div>
+          <!-- timeline -->
+          <div style="flex:1;overflow:hidden;padding:10px 22px 0;">
+            <!-- port -->
+            <div style="display:flex;gap:12px;">
+              <div style="width:46px;flex-shrink:0;text-align:right;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;padding-top:3px;">09:00</div>
+              <div style="display:flex;flex-direction:column;align-items:center;"><span style="width:18px;height:18px;border-radius:50%;background:#0C2330;border:2px solid #0C2330;display:flex;align-items:center;justify-content:center;font-size:9px;color:#fff;">⚓</span><span style="flex:1;width:2px;background:#D3DBDC;"></span></div>
+              <div style="padding-bottom:10px;"><div style="font-weight:700;font-size:14px;">Puerto de Ushuaia</div><div style="font-size:11px;color:#5E727B;">🚶 5 min hasta la 1ª parada</div></div>
+            </div>
+            <!-- stop 1 -->
+            <div style="display:flex;gap:12px;">
+              <div style="width:46px;flex-shrink:0;text-align:right;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;padding-top:3px;color:#2C7E96;">09:05</div>
+              <div style="display:flex;flex-direction:column;align-items:center;"><span style="width:22px;height:22px;border-radius:50%;background:#4FA8C2;display:flex;align-items:center;justify-content:center;font-family:'Space Mono';font-size:11px;font-weight:700;color:#06222C;">1</span><span style="flex:1;width:2px;background:#D3DBDC;"></span></div>
+              <div style="padding-bottom:12px;flex:1;"><div style="background:#fff;border:1px solid #E2E6E6;border-radius:12px;padding:9px 11px;"><div style="font-family:'Space Mono';font-size:9px;letter-spacing:1px;color:#2C7E96;">MUSEO</div><div style="font-weight:700;font-size:14px;">Museo del Fin del Mundo</div><div style="font-size:11px;color:#5E727B;margin-top:2px;">45 min · 09:05 – 09:50 · 🚶 8 min</div></div></div>
+            </div>
+            <!-- stop 2 LOCAL -->
+            <div style="display:flex;gap:12px;">
+              <div style="width:46px;flex-shrink:0;text-align:right;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;padding-top:3px;color:#B5651D;">09:58</div>
+              <div style="display:flex;flex-direction:column;align-items:center;"><span style="width:22px;height:22px;border-radius:50%;background:#E07B2C;display:flex;align-items:center;justify-content:center;font-family:'Space Mono';font-size:11px;font-weight:700;color:#3A1B05;">2</span><span style="flex:1;width:2px;background:#D3DBDC;"></span></div>
+              <div style="padding-bottom:12px;flex:1;"><div style="background:#FBEEDF;border:1.5px solid #E7B788;border-radius:12px;padding:9px 11px;"><div style="display:flex;justify-content:space-between;align-items:center;"><div style="font-family:'Space Mono';font-size:9px;letter-spacing:1px;color:#B5651D;">CERÁMICA</div><span style="background:#E07B2C;color:#fff;font-family:'Space Mono';font-size:8px;font-weight:700;padding:2px 6px;border-radius:5px;">LOCAL</span></div><div style="font-weight:700;font-size:14px;">Taller Lenga Cerámica</div><div style="font-size:11px;color:#8A5A2A;margin-top:2px;">45 min · 09:58 – 10:43 · 🚶 6 min</div></div></div>
+            </div>
+            <!-- stop 3 -->
+            <div style="display:flex;gap:12px;">
+              <div style="width:46px;flex-shrink:0;text-align:right;font-family:'Space Mono',monospace;font-size:12px;font-weight:700;padding-top:3px;color:#2C7E96;">10:49</div>
+              <div style="display:flex;flex-direction:column;align-items:center;"><span style="width:22px;height:22px;border-radius:50%;background:#4FA8C2;display:flex;align-items:center;justify-content:center;font-family:'Space Mono';font-size:11px;font-weight:700;color:#06222C;">3</span><span style="flex:1;width:2px;background:#D3DBDC;"></span></div>
+              <div style="padding-bottom:10px;flex:1;"><div style="background:#fff;border:1px solid #E2E6E6;border-radius:12px;padding:9px 11px;"><div style="font-family:'Space Mono';font-size:9px;letter-spacing:1px;color:#2C7E96;">CAFETERÍA</div><div style="font-weight:700;font-size:14px;">Café del Faro</div><div style="font-size:11px;color:#5E727B;margin-top:2px;">30 min · 10:49 – 11:20 · 🚶 10 min</div></div></div>
+            </div>
+            <!-- alert -->
+            <div style="display:flex;gap:12px;">
+              <div style="width:46px;flex-shrink:0;"></div>
+              <div style="flex:1;display:flex;gap:9px;align-items:flex-start;background:#FCEEDD;border:1.5px solid #E8A04E;border-radius:12px;padding:10px 12px;"><span style="font-size:15px;">⚠️</span><div style="font-size:12px;line-height:1.35;color:#8A5320;"><b>Esta ruta supera tu tiempo por ~18 min.</b> Probá quitar una parada o cambiá a una opción más cercana.</div></div>
+            </div>
+          </div>
+          <!-- actions -->
+          <div style="padding:12px 18px 24px;background:linear-gradient(180deg,rgba(244,246,247,0),#F4F6F7 25%);display:flex;flex-direction:column;gap:9px;">
+            <div style="background:#0C2330;color:#fff;border-radius:14px;padding:15px;text-align:center;font-weight:800;font-size:15px;box-shadow:0 14px 30px -12px rgba(12,35,48,.6);">▶ Iniciar recorrido</div>
+            <div style="background:#fff;border:1.5px solid #4FA8C2;color:#0C3A48;border-radius:14px;padding:13px;text-align:center;font-weight:700;font-size:13.5px;">🏠 Cambiar por opción indoor</div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#EAF1F2;text-align:center;">05 · Ruta sugerida<br><span style="font-family:'Hanken Grotesque';font-size:14px;font-weight:400;color:#8FA6AE;">timeline · traslados · alerta de tiempo</span></figcaption>
+    </figure>
+
+    <!-- ============ SCREEN 6 · PANEL COMERCIANTE ============ -->
+    <figure style="margin:0;display:flex;flex-direction:column;gap:18px;align-items:center;width:390px;flex-shrink:0;">
+      <div style="width:390px;height:858px;background:#0C2330;border-radius:48px;padding:9px;box-shadow:0 40px 80px -28px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.05);">
+        <div style="width:100%;height:100%;border-radius:40px;overflow:hidden;position:relative;display:flex;flex-direction:column;background:#F4F6F7;color:#15333F;">
+          <div style="height:30px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 24px;font-family:'Space Mono',monospace;font-size:11px;color:#15333F;"><span>9:41</span><span>5G ▰▰▰</span></div>
+          <!-- header warm -->
+          <div style="background:linear-gradient(180deg,#FBEEDF,#F4F6F7);padding:6px 22px 14px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <span style="width:38px;height:38px;border-radius:12px;background:#fff;border:1px solid #E7D3BC;display:flex;align-items:center;justify-content:center;font-size:18px;">‹</span>
+              <span style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#B5651D;">PANEL COMERCIANTE</span>
+              <span style="width:38px;height:38px;"></span>
+            </div>
+            <div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:25px;letter-spacing:-.5px;margin-top:10px;">Cargá tu experiencia</div>
+            <div style="font-size:12.5px;color:#8A5A2A;margin-top:3px;">Sumá tu comercio local al recorrido alternativo.</div>
+          </div>
+          <!-- form -->
+          <div style="flex:1;overflow:hidden;padding:6px 22px 0;display:flex;flex-direction:column;gap:11px;">
+            <div><div style="font-family:'Space Mono';font-size:10px;letter-spacing:1px;color:#5E727B;margin-bottom:4px;">NOMBRE DEL COMERCIO / EXPERIENCIA</div><div style="background:#fff;border:1.5px solid #E2E6E6;border-radius:11px;padding:11px 12px;font-size:13px;color:#9aa6aa;">Taller Lenga Cerámica</div></div>
+            <div style="display:flex;gap:9px;">
+              <div style="flex:1;"><div style="font-family:'Space Mono';font-size:10px;letter-spacing:1px;color:#5E727B;margin-bottom:4px;">CATEGORÍA</div><div style="background:#fff;border:1.5px solid #E2E6E6;border-radius:11px;padding:11px 12px;font-size:13px;color:#15333F;display:flex;justify-content:space-between;">Cerámica <span style="color:#9aa6aa;">▾</span></div></div>
+              <div style="width:118px;"><div style="font-family:'Space Mono';font-size:10px;letter-spacing:1px;color:#5E727B;margin-bottom:4px;">MODALIDAD</div><div style="display:flex;gap:4px;background:#fff;border:1px solid #E2E6E6;border-radius:11px;padding:4px;"><span style="flex:1;text-align:center;font-size:11px;padding:7px 0;border-radius:8px;background:#0C2330;color:#fff;font-weight:700;">Indoor</span><span style="flex:1;text-align:center;font-size:11px;padding:7px 0;color:#5E727B;">Outdoor</span></div></div>
+            </div>
+            <div><div style="display:flex;justify-content:space-between;"><span style="font-family:'Space Mono';font-size:10px;letter-spacing:1px;color:#5E727B;margin-bottom:4px;">DESCRIPCIÓN BREVE</span><span style="font-family:'Space Mono';font-size:10px;color:#9aa6aa;">86 / 160</span></div><div style="background:#fff;border:1.5px solid #E2E6E6;border-radius:11px;padding:11px 12px;font-size:12.5px;color:#3A535C;line-height:1.4;height:54px;">Taller de cerámica con barro local y motivos del Beagle. Llevás tu pieza.</div></div>
+            <div style="display:flex;gap:9px;">
+              <div style="flex:1;"><div style="font-family:'Space Mono';font-size:10px;letter-spacing:1px;color:#5E727B;margin-bottom:4px;">PRECIO</div><div style="background:#fff;border:1.5px solid #E2E6E6;border-radius:11px;padding:11px 12px;font-size:13px;color:#9aa6aa;">ARS 9.000</div></div>
+              <div style="flex:1;"><div style="font-family:'Space Mono';font-size:10px;letter-spacing:1px;color:#5E727B;margin-bottom:4px;">DURACIÓN</div><div style="background:#fff;border:1.5px solid #E2E6E6;border-radius:11px;padding:11px 12px;font-size:13px;color:#9aa6aa;">45 min</div></div>
+              <div style="width:84px;"><div style="font-family:'Space Mono';font-size:10px;letter-spacing:1px;color:#5E727B;margin-bottom:4px;">CUPOS</div><div style="background:#fff;border:1.5px solid #E2E6E6;border-radius:11px;padding:11px 12px;font-size:13px;color:#9aa6aa;">6</div></div>
+            </div>
+            <div style="display:flex;gap:9px;">
+              <div style="flex:1;"><div style="font-family:'Space Mono';font-size:10px;letter-spacing:1px;color:#5E727B;margin-bottom:4px;">IDIOMAS</div><div style="display:flex;gap:5px;"><span style="background:#E4F1F4;border:1.5px solid #4FA8C2;border-radius:9px;padding:7px 11px;font-size:11px;font-weight:600;color:#0C3A48;">ES</span><span style="background:#E4F1F4;border:1.5px solid #4FA8C2;border-radius:9px;padding:7px 11px;font-size:11px;font-weight:600;color:#0C3A48;">EN</span><span style="background:#fff;border:1.5px solid #E2E6E6;border-radius:9px;padding:7px 11px;font-size:11px;color:#5E727B;">PT</span></div></div>
+              <div style="flex:1;"><div style="font-family:'Space Mono';font-size:10px;letter-spacing:1px;color:#5E727B;margin-bottom:4px;">FOTO</div><div style="background:#fff;border:1.5px dashed #C9B79E;border-radius:11px;padding:9px;font-size:11px;color:#B5651D;text-align:center;font-family:'Space Mono';">＋ Subir</div></div>
+            </div>
+          </div>
+          <!-- publish -->
+          <div style="padding:12px 18px 24px;background:linear-gradient(180deg,rgba(244,246,247,0),#F4F6F7 25%);">
+            <div style="background:#E07B2C;color:#fff;border-radius:14px;padding:16px;text-align:center;font-weight:800;font-size:15px;box-shadow:0 14px 30px -12px rgba(224,123,44,.6);">Publicar experiencia</div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#EAF1F2;text-align:center;">06 · Panel comerciante<br><span style="font-family:'Hanken Grotesque';font-size:14px;font-weight:400;color:#8FA6AE;">alta de experiencia local</span></figcaption>
+    </figure>
+
+    <!-- ============ APPENDIX · SISTEMA ============ -->
+    <div style="flex-basis:100%;max-width:1100px;margin:24px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:18px;">
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px 24px;">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#6FC0D6;margin-bottom:14px;">BADGES</div>
+        <div style="display:flex;flex-wrap:wrap;gap:9px;">
+          <span style="background:#E07B2C;color:#fff;font-family:'Space Mono';font-size:11px;font-weight:700;padding:5px 11px;border-radius:8px;">LOCAL</span>
+          <span style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#CFE0E4;font-family:'Space Mono';font-size:11px;padding:5px 11px;border-radius:8px;">INDOOR</span>
+          <span style="background:#4FA8C2;color:#06222C;font-family:'Space Mono';font-size:11px;font-weight:700;padding:5px 11px;border-radius:8px;">CERCA DEL PUERTO</span>
+          <span style="background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#CFE0E4;font-family:'Space Mono';font-size:11px;padding:5px 11px;border-radius:8px;">ACCESIBLE</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;background:rgba(30,138,91,.18);border:1px solid rgba(30,138,91,.5);color:#7BD3A6;font-family:'Space Mono';font-size:11px;padding:5px 11px;border-radius:8px;"><span style="width:7px;height:7px;border-radius:50%;background:#33C57F;"></span>DISPONIBLE AHORA</span>
+        </div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:22px 24px;">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:2px;color:#6FC0D6;margin-bottom:14px;">ESTADOS VACÍOS & ALERTAS</div>
+        <div style="display:flex;flex-direction:column;gap:9px;">
+          <div style="display:flex;gap:9px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:11px;padding:11px 13px;font-size:13px;color:#C7D4D8;"><span>🔍</span>No hay actividades disponibles con estos filtros.</div>
+          <div style="display:flex;gap:9px;align-items:center;background:rgba(224,123,44,.12);border:1px solid rgba(224,123,44,.4);border-radius:11px;padding:11px 13px;font-size:13px;color:#F1C79C;"><span>🌬</span>El clima no acompaña para actividades al aire libre.</div>
+          <div style="display:flex;gap:9px;align-items:center;background:rgba(232,160,78,.12);border:1px solid rgba(232,160,78,.45);border-radius:11px;padding:11px 13px;font-size:13px;color:#F1C79C;"><span>⚠️</span>Esta ruta supera tu tiempo disponible.</div>
+        </div>
+      </div>
+    </div>
+
+    <!--SCREENS_TAIL-->
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
