@@ -1,0 +1,54 @@
+[
+  {
+    "id": "ruta-centro-historico",
+    "nombre": "Ruta Centro Histórico",
+    "origen": "puerto",
+    "descripcion": "Recorrido a pie desde el muelle. Cubre los puntos de interés más representativos en el radio inmediato del puerto, sin necesidad de transporte.",
+    "pois": [
+      "mirador-puerto",
+      "almacen-ramos-generales",
+      "museo-fin-mundo",
+      "museo-maritimo"
+    ],
+    "duracion_total_min": 215,
+    "distancia_total_km": 2.5
+  },
+  {
+    "id": "ruta-canal-fauna",
+    "nombre": "Ruta Canal y Fauna Marina",
+    "origen": "puerto",
+    "descripcion": "Navegación desde el puerto cubriendo los hitos del Canal de Beagle: colonia de lobos marinos, aves cormoranes y el famoso faro. Ideal para condiciones sin viento.",
+    "pois": [
+      "navegacion-canal-beagle",
+      "isla-lobos",
+      "faro-eclaireurs"
+    ],
+    "duracion_total_min": 230,
+    "distancia_total_km": 42.0
+  },
+  {
+    "id": "ruta-parque-tren",
+    "nombre": "Ruta Parque Nacional y Tren Histórico",
+    "origen": "puerto",
+    "descripcion": "Excursión clásica en combi hacia el extremo occidental de la ciudad. Combina el tren más austral del mundo con los senderos del Parque Nacional y el hito de Bahía Lapataia.",
+    "pois": [
+      "tren-fin-mundo",
+      "parque-nacional-tdf",
+      "bahia-lapataia"
+    ],
+    "duracion_total_min": 330,
+    "distancia_total_km": 38.0
+  },
+  {
+    "id": "ruta-montana-aventura",
+    "nombre": "Ruta Montaña y Aventura",
+    "origen": "puerto",
+    "descripcion": "Para cruceristas con buena condición física y más tiempo disponible. Combina el ascenso al Glaciar Martial con el trekking a la Laguna Esmeralda para un día completo de naturaleza.",
+    "pois": [
+      "glaciar-martial",
+      "laguna-esmeralda"
+    ],
+    "duracion_total_min": 390,
+    "distancia_total_km": 28.0
+  }
+]

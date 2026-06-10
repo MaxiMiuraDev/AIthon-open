@@ -1,0 +1,6 @@
+{
+  "condicion": "Despejado",
+  "temp_c": 5,
+  "condiciones_disponibles": ["Soleado", "Lluvioso", "Despejado"],
+  "nota_demo": "Para demostrar distintos escenarios climáticos, alternar el valor de 'condicion' entre los valores listados en 'condiciones_disponibles'."
+}

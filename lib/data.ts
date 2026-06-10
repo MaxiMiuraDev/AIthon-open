@@ -1,0 +1,106 @@
+import { readFileSync } from "fs";
+import { join } from "path";
+import { z } from "zod";
+import type { POI, Ruta, Clima } from "@/types";
+
+// ──────────────────────────────────────────────
+// Schemas Zod
+// ──────────────────────────────────────────────
+
+const CategoriaPOISchema = z.enum([
+  "parque_natural",
+  "museo",
+  "atraccion_historica",
+  "tour_marino",
+  "fauna_marina",
+  "glaciar",
+  "senderismo",
+  "paisaje",
+  "gastronomia_cultural",
+  "mirador",
+  "deporte_aventura",
+  "reserva_natural",
+]);
+
+const CondicionClimaSchema = z.enum(["Soleado", "Lluvioso", "Despejado"]);
+
+export const PoiSchema = z.object({
+  id: z.string().min(1),
+  nombre: z.string().min(1),
+  lat: z.number(),
+  lng: z.number(),
+  categoria: CategoriaPOISchema,
+  descripcion: z.string().min(1),
+  duracion_min: z.number().positive(),
+  distancia_puerto_km: z.number().nonnegative(),
+  accesible: z.boolean(),
+  accesibilidad_detalle: z.string(),
+  idiomas: z.array(z.string()).min(1),
+  horarios: z.string(),
+  clima_recomendado: z.array(CondicionClimaSchema).min(1),
+});
+
+export const RutaSchema = z.object({
+  id: z.string().min(1),
+  nombre: z.string().min(1),
+  origen: z.literal("puerto"),
+  descripcion: z.string().min(1),
+  pois: z.array(z.string()).min(1),
+  duracion_total_min: z.number().positive(),
+  distancia_total_km: z.number().nonnegative(),
+});
+
+export const ClimaSchema = z.object({
+  condicion: CondicionClimaSchema,
+  temp_c: z.number(),
+  condiciones_disponibles: z.array(CondicionClimaSchema).min(1),
+  nota_demo: z.string(),
+});
+
+export const PoisArraySchema = z.array(PoiSchema).min(1);
+export const RutasArraySchema = z.array(RutaSchema).min(1);
+
+// ──────────────────────────────────────────────
+// Loader interno
+// ──────────────────────────────────────────────
+
+function readJson(filename: string): unknown {
+  const filePath = join(process.cwd(), "data", filename);
+  try {
+    const raw = readFileSync(filePath, "utf-8");
+    return JSON.parse(raw);
+  } catch (err) {
+    throw new Error(`[data] No se pudo leer ${filename}: ${String(err)}`);
+  }
+}
+
+function parseOrThrow<T>(
+  schema: z.ZodType<T>,
+  raw: unknown,
+  filename: string
+): T {
+  const result = schema.safeParse(raw);
+  if (!result.success) {
+    const issues = result.error.issues
+      .map((i) => `  • ${i.path.join(".")}: ${i.message}`)
+      .join("\n");
+    throw new Error(`[data] ${filename} no pasa la validación:\n${issues}`);
+  }
+  return result.data;
+}
+
+// ──────────────────────────────────────────────
+// Funciones públicas
+// ──────────────────────────────────────────────
+
+export function loadPois(): POI[] {
+  return parseOrThrow(PoisArraySchema, readJson("pois.json"), "pois.json");
+}
+
+export function loadRutas(): Ruta[] {
+  return parseOrThrow(RutasArraySchema, readJson("rutas.json"), "rutas.json");
+}
+
+export function loadClima(): Clima {
+  return parseOrThrow(ClimaSchema, readJson("clima.json"), "clima.json");
+}
