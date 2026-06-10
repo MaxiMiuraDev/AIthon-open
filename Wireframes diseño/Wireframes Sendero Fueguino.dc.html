@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+</style>
+</helmet>
+
+<div style="min-height:100vh; background:#e4e1d9; background-image: radial-gradient(#d3cfc4 1px, transparent 1px); background-size: 22px 22px; font-family:'Kalam', cursive; color:#2b2b29; padding:36px 40px 80px;">
+
+  <!-- ===== PAGE HEADER ===== -->
+  <div style="max-width:1240px; margin:0 auto 8px; display:flex; flex-direction:column; gap:6px;">
+    <div style="font-family:'Caveat',cursive; font-size:46px; font-weight:700; line-height:1; color:#2b2b29;">Sendero Fueguino — Wireframes</div>
+    <div style="font-family:'Caveat',cursive; font-size:24px; color:#2C5F6F;">Flujo mobile · lo-fi · 8 pantallas (A–H) + variantes · solo estructura, no diseño final</div>
+  </div>
+
+  <!-- ===== LEGEND ===== -->
+  <div style="max-width:1240px; margin:18px auto 38px; display:flex; flex-wrap:wrap; gap:10px 26px; align-items:center; background:#fcfbf8; border:2.5px solid #2b2b29; border-radius:14px; padding:14px 20px; box-shadow:4px 4px 0 rgba(0,0,0,0.12);">
+    <span style="font-family:'Caveat',cursive; font-size:22px; font-weight:700; margin-right:6px;">Leyenda:</span>
+    <span style="display:flex; align-items:center; gap:8px; font-size:14px;"><span style="width:16px;height:16px;border-radius:50%;background:#2C5F6F;display:inline-block;border:2px solid #1f4753;"></span>POI histórico</span>
+    <span style="display:flex; align-items:center; gap:8px; font-size:14px;"><span style="width:16px;height:16px;border-radius:50%;background:#B5651D;display:inline-block;border:2px solid #8a4d16;"></span>Productor local (MOCK)</span>
+    <span style="display:flex; align-items:center; gap:8px; font-size:14px;"><span style="width:18px;height:18px;border-radius:50%;background:#fff;border:2px solid #2b2b29;display:inline-flex;align-items:center;justify-content:center;font-size:11px;color:#1F8A5B;">✓</span>Visitado</span>
+    <span style="display:flex; align-items:center; gap:8px; font-size:14px;"><span style="background:#D98E04;color:#fff;font-size:10px;font-weight:700;font-family:'Kalam';padding:2px 7px;border-radius:4px;letter-spacing:.5px;">MOCK</span>Dato simulado</span>
+    <span style="display:flex; align-items:center; gap:8px; font-size:14px;"><span style="width:22px;height:14px;border:2px dashed #9c988c;border-radius:3px;display:inline-block;background:repeating-linear-gradient(45deg,#eceae3,#eceae3 4px,#e0ddd3 4px,#e0ddd3 8px);"></span>Placeholder / imagen</span>
+    <span style="display:flex; align-items:center; gap:8px; font-size:14px; color:#2C5F6F;"><span style="font-family:'Caveat';font-size:22px;font-weight:700;">→</span>Navegación</span>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 1 — ONBOARDING -->
+  <!-- ============================================================ -->
+  <div style="max-width:1320px; margin:0 auto 14px; display:flex; align-items:center; gap:14px;">
+    <span style="width:40px;height:40px;border-radius:50%;background:#2C5F6F;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Caveat';font-size:26px;font-weight:700;flex-shrink:0;">1</span>
+    <span style="font-family:'Caveat',cursive; font-size:32px; font-weight:700;">Onboarding</span>
+    <span style="font-size:15px; color:#6b675c;">— Fin se presenta, recoge idioma · tiempo · intereses · accesibilidad</span>
+  </div>
+  <div style="max-width:1320px; margin:0 auto 56px; display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap;">
+
+    <!-- A · BIENVENIDA -->
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;padding:14px 16px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:#8a867a;margin-bottom:14px;"><span>9:41</span><span>▴ ▮ ▰</span></div>
+          <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;">
+            <!-- Fin avatar: abstract compass/mountain diamond -->
+            <div style="width:84px;height:84px;border-radius:50%;border:2.5px solid #2C5F6F;display:flex;align-items:center;justify-content:center;background:#eaf1f3;">
+              <div style="width:0;height:0;border-left:20px solid transparent;border-right:20px solid transparent;border-bottom:34px solid #2C5F6F;"></div>
+            </div>
+            <div style="font-family:'Caveat';font-size:30px;font-weight:700;line-height:1;">Sendero Fueguino</div>
+            <div style="font-size:13px;color:#6b675c;line-height:1.35;">Un recorrido a pie por el centro de Ushuaia, contado por Fin</div>
+            <!-- disclaimer box -->
+            <div style="width:100%;background:#eef2f0;border:2px solid #c7d3cf;border-radius:10px;padding:11px 12px;text-align:left;display:flex;flex-direction:column;gap:6px;">
+              <div style="font-size:12px;font-weight:700;display:flex;gap:6px;align-items:center;">ℹ️ Sobre Fin, tu guía</div>
+              <div style="height:7px;background:#d4d1c9;border-radius:4px;width:100%;"></div>
+              <div style="height:7px;background:#d4d1c9;border-radius:4px;width:92%;"></div>
+              <div style="height:7px;background:#d4d1c9;border-radius:4px;width:80%;"></div>
+              <div style="font-size:10px;color:#8a867a;font-style:italic;">Representación narrativa educativa — no habla por las comunidades.</div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;">
+            <div style="background:#2C5F6F;color:#fff;border-radius:10px;padding:13px;text-align:center;font-size:14px;font-weight:700;font-family:'Kalam';">Empezar recorrido →</div>
+            <div style="font-size:11px;color:#8a867a;text-align:center;">Funciona mejor con sonido activado 🔊</div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;color:#2b2b29;text-align:center;">A · Bienvenida<br><span style="font-size:14px;font-weight:400;color:#6b675c;">avatar + disclaimer cultural</span></figcaption>
+    </figure>
+
+    <div style="align-self:center;font-family:'Caveat';font-size:38px;font-weight:700;color:#2C5F6F;padding-top:40px;">→</div>
+
+    <!-- B · IDIOMA + TIEMPO -->
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;padding:14px 16px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:#8a867a;margin-bottom:12px;"><span>9:41</span><span>▴ ▮ ▰</span></div>
+          <div style="font-family:'Caveat';font-size:24px;font-weight:700;margin-bottom:4px;">¿En qué idioma?</div>
+          <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:18px;">
+            <div style="border:2px solid #2C5F6F;background:#2C5F6F;color:#fff;border-radius:9px;padding:11px;font-size:13px;font-weight:700;text-align:center;">Español ✓</div>
+            <div style="border:2px solid #c4c0b4;border-radius:9px;padding:11px;font-size:13px;text-align:center;color:#9c988c;display:flex;justify-content:center;gap:6px;align-items:center;">English <span style="background:#D98E04;color:#fff;font-size:9px;padding:1px 5px;border-radius:3px;">PARCIAL</span></div>
+            <div style="border:2px solid #c4c0b4;border-radius:9px;padding:11px;font-size:13px;text-align:center;color:#9c988c;display:flex;justify-content:center;gap:6px;align-items:center;">Português <span style="background:#D98E04;color:#fff;font-size:9px;padding:1px 5px;border-radius:3px;">PARCIAL</span></div>
+          </div>
+          <div style="font-family:'Caveat';font-size:24px;font-weight:700;margin-bottom:8px;">¿Cuánto tiempo tenés?</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;flex:1;">
+            <div style="border:2px solid #2C5F6F;background:#eaf1f3;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;"><span style="font-size:18px;">🕐</span><span style="font-size:16px;font-weight:700;">2h</span><span style="font-size:9px;color:#6b675c;">exprés</span></div>
+            <div style="border:2px solid #c4c0b4;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;"><span style="font-size:18px;">🕐</span><span style="font-size:16px;font-weight:700;">4h</span></div>
+            <div style="border:2px solid #c4c0b4;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;"><span style="font-size:18px;">🕐</span><span style="font-size:16px;font-weight:700;">6h</span></div>
+            <div style="border:2px solid #c4c0b4;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;"><span style="font-size:18px;">🕐</span><span style="font-size:16px;font-weight:700;">8h</span></div>
+          </div>
+          <div style="background:#2C5F6F;color:#fff;border-radius:10px;padding:13px;text-align:center;font-size:14px;font-weight:700;margin-top:12px;">Continuar →</div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;text-align:center;">B · Idioma + Tiempo<br><span style="font-size:14px;font-weight:400;color:#6b675c;">saltable si hay localStorage</span></figcaption>
+    </figure>
+
+    <div style="align-self:center;font-family:'Caveat';font-size:38px;font-weight:700;color:#2C5F6F;padding-top:40px;">→</div>
+
+    <!-- C · INTERESES + ACCESIBILIDAD -->
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;padding:14px 16px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:#8a867a;margin-bottom:12px;"><span>9:41</span><span>▴ ▮ ▰</span></div>
+          <div style="font-family:'Caveat';font-size:24px;font-weight:700;">¿Qué te interesa?</div>
+          <div style="font-size:11px;color:#8a867a;margin-bottom:10px;">Si no elegís nada, te muestro todo.</div>
+          <div style="display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px;">
+            <span style="border:2px solid #2C5F6F;background:#eaf1f3;border-radius:16px;padding:6px 11px;font-size:12px;">Gastronomía ✓</span>
+            <span style="border:1.5px solid #c4c0b4;border-radius:16px;padding:6px 11px;font-size:12px;">Cultura</span>
+            <span style="border:2px solid #2C5F6F;background:#eaf1f3;border-radius:16px;padding:6px 11px;font-size:12px;">Compras ✓</span>
+            <span style="border:1.5px solid #c4c0b4;border-radius:16px;padding:6px 11px;font-size:12px;">Naturaleza</span>
+            <span style="border:1.5px solid #c4c0b4;border-radius:16px;padding:6px 11px;font-size:12px;">Talleres</span>
+            <span style="border:1.5px solid #c4c0b4;border-radius:16px;padding:6px 11px;font-size:12px;">Museos</span>
+            <span style="border:1.5px solid #c4c0b4;border-radius:16px;padding:6px 11px;font-size:12px;">Indoor</span>
+          </div>
+          <div style="font-family:'Caveat';font-size:22px;font-weight:700;margin-bottom:8px;">Accesibilidad</div>
+          <div style="border:2px solid #c4c0b4;border-radius:10px;padding:11px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:auto;">
+            <span style="font-size:12px;line-height:1.3;">♿ Recorrido accesible<br><span style="font-size:10px;color:#8a867a;">sin escaleras, superficies parejas</span></span>
+            <span style="width:42px;height:24px;border-radius:14px;background:#cfccc2;position:relative;flex-shrink:0;"><span style="position:absolute;width:20px;height:20px;border-radius:50%;background:#fff;top:2px;left:2px;border:1px solid #b3afa3;"></span></span>
+          </div>
+          <div style="display:flex;gap:8px;margin-top:14px;">
+            <div style="border:2px solid #c4c0b4;border-radius:10px;padding:13px 14px;font-size:13px;font-weight:700;color:#6b675c;">← Atrás</div>
+            <div style="flex:1;background:#2C5F6F;color:#fff;border-radius:10px;padding:13px;text-align:center;font-size:14px;font-weight:700;">Ver mi recorrido</div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;text-align:center;">C · Intereses + Accesibilidad<br><span style="font-size:14px;font-weight:400;color:#6b675c;">dispara el motor de Fin</span></figcaption>
+    </figure>
+
+    <div style="align-self:center;font-family:'Caveat';font-size:38px;font-weight:700;color:#2C5F6F;padding-top:40px;">→</div>
+
+    <!-- LOADING -->
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px;text-align:center;">
+          <div style="width:72px;height:72px;border-radius:50%;border:2.5px solid #2C5F6F;border-top-color:#eaf1f3;display:flex;align-items:center;justify-content:center;"><div style="width:0;height:0;border-left:16px solid transparent;border-right:16px solid transparent;border-bottom:28px solid #2C5F6F;"></div></div>
+          <div style="font-family:'Caveat';font-size:26px;font-weight:700;line-height:1.1;">Fin está armando<br>tu recorrido…</div>
+          <div style="display:flex;gap:6px;"><span style="width:8px;height:8px;border-radius:50%;background:#2C5F6F;"></span><span style="width:8px;height:8px;border-radius:50%;background:#b3c7ce;"></span><span style="width:8px;height:8px;border-radius:50%;background:#dfe7ea;"></span></div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;text-align:center;">Estado de carga<br><span style="font-size:14px;font-weight:400;color:#6b675c;">~1–2 s simulados</span></figcaption>
+    </figure>
+  </div>
+
+  <!-- VARIANT NOTE: B+C fusionada -->
+  <div style="max-width:1320px; margin:0 auto 14px; display:flex; align-items:center; gap:12px;">
+    <span style="background:#fff7e6;border:2px solid #D98E04;border-radius:8px;padding:4px 12px;font-family:'Caveat';font-size:20px;font-weight:700;color:#a86c03;">Variante</span>
+    <span style="font-size:15px;color:#6b675c;">Si falta tiempo (sección 14 del doc): fusionar B + C en una sola pantalla con scroll.</span>
+  </div>
+  <div style="max-width:1320px; margin:0 auto 56px; display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap;">
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;padding:14px 16px;gap:10px;position:relative;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:#8a867a;"><span>9:41</span><span>▴ ▮ ▰</span></div>
+          <div style="font-family:'Caveat';font-size:21px;font-weight:700;">Idioma</div>
+          <div style="display:flex;gap:6px;"><span style="flex:1;border:2px solid #2C5F6F;background:#2C5F6F;color:#fff;border-radius:8px;padding:7px;font-size:11px;text-align:center;">ES ✓</span><span style="flex:1;border:1.5px solid #c4c0b4;border-radius:8px;padding:7px;font-size:11px;text-align:center;color:#9c988c;">EN</span><span style="flex:1;border:1.5px solid #c4c0b4;border-radius:8px;padding:7px;font-size:11px;text-align:center;color:#9c988c;">PT</span></div>
+          <div style="font-family:'Caveat';font-size:21px;font-weight:700;">Tiempo</div>
+          <div style="display:flex;gap:6px;"><span style="flex:1;border:2px solid #2C5F6F;background:#eaf1f3;border-radius:8px;padding:8px 0;font-size:12px;font-weight:700;text-align:center;">2h</span><span style="flex:1;border:1.5px solid #c4c0b4;border-radius:8px;padding:8px 0;font-size:12px;text-align:center;">4h</span><span style="flex:1;border:1.5px solid #c4c0b4;border-radius:8px;padding:8px 0;font-size:12px;text-align:center;">6h</span><span style="flex:1;border:1.5px solid #c4c0b4;border-radius:8px;padding:8px 0;font-size:12px;text-align:center;">8h</span></div>
+          <div style="font-family:'Caveat';font-size:21px;font-weight:700;">Intereses</div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px;">
+            <span style="border:2px solid #2C5F6F;background:#eaf1f3;border-radius:14px;padding:4px 9px;font-size:11px;">Gastro ✓</span>
+            <span style="border:1.5px solid #c4c0b4;border-radius:14px;padding:4px 9px;font-size:11px;">Cultura</span>
+            <span style="border:1.5px solid #c4c0b4;border-radius:14px;padding:4px 9px;font-size:11px;">Museos</span>
+            <span style="border:1.5px solid #c4c0b4;border-radius:14px;padding:4px 9px;font-size:11px;">Naturaleza</span>
+            <span style="border:1.5px solid #c4c0b4;border-radius:14px;padding:4px 9px;font-size:11px;">Indoor</span>
+          </div>
+          <div style="border:2px solid #c4c0b4;border-radius:9px;padding:9px;display:flex;align-items:center;justify-content:space-between;font-size:11px;">♿ Accesible<span style="width:38px;height:22px;border-radius:12px;background:#cfccc2;position:relative;"><span style="position:absolute;width:18px;height:18px;border-radius:50%;background:#fff;top:2px;left:2px;"></span></span></div>
+          <div style="background:#2C5F6F;color:#fff;border-radius:10px;padding:12px;text-align:center;font-size:13px;font-weight:700;margin-top:auto;">Ver mi recorrido</div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;text-align:center;">B + C fusionadas<br><span style="font-size:14px;font-weight:400;color:#6b675c;">una sola pantalla, scroll</span></figcaption>
+    </figure>
+    <div style="align-self:center;max-width:300px;font-size:14px;color:#6b675c;line-height:1.5;background:#fcfbf8;border:2px dashed #c4c0b4;border-radius:12px;padding:16px 18px;">
+      <b style="font-family:'Caveat';font-size:19px;color:#2b2b29;">Decisión de diseño</b><br>
+      El núcleo que no se corta exige tiempo + intereses + accesibilidad. La versión fusionada los mantiene todos en una vista; las separadas (B, C) dan más aire y se saltan si ya hay datos guardados.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 2 — MAPA & FICHA -->
+  <!-- ============================================================ -->
+  <div style="max-width:1320px; margin:0 auto 14px; display:flex; align-items:center; gap:14px;">
+    <span style="width:40px;height:40px;border-radius:50%;background:#2C5F6F;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Caveat';font-size:26px;font-weight:700;flex-shrink:0;">2</span>
+    <span style="font-family:'Caveat',cursive; font-size:32px; font-weight:700;">Mapa principal + Ficha</span>
+    <span style="font-size:15px; color:#6b675c;">— Leaflet con marcadores filtrados por Fin; tocar marcador abre la ficha</span>
+  </div>
+  <div style="max-width:1320px; margin:0 auto 56px; display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap;">
+
+    <!-- D · MAPA (lista debajo) -->
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;">
+          <!-- header 56px -->
+          <div style="background:#2C5F6F;color:#fff;padding:9px 12px;display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-family:'Caveat';font-size:18px;font-weight:700;">Sendero Fueguino</span>
+            <span style="display:flex;gap:4px;font-size:13px;"><span style="background:#fff;color:#2C5F6F;border-radius:5px;padding:1px 4px;">☀️</span><span style="opacity:.7;">🌧️</span><span style="opacity:.7;">💨</span><span style="margin-left:4px;">🌐</span><span>⚙️</span></span>
+          </div>
+          <!-- map area -->
+          <div style="flex:1;position:relative;background:#e8ece9;overflow:hidden;">
+            <!-- roads -->
+            <div style="position:absolute;top:30%;left:-10%;width:120%;height:7px;background:#d2d6d2;transform:rotate(-8deg);"></div>
+            <div style="position:absolute;top:62%;left:-10%;width:120%;height:9px;background:#d2d6d2;transform:rotate(4deg);"></div>
+            <div style="position:absolute;top:0;left:38%;width:7px;height:100%;background:#d2d6d2;transform:rotate(6deg);"></div>
+            <div style="position:absolute;bottom:8px;left:0;width:100%;height:18px;background:#cfe0e4;"></div>
+            <div style="position:absolute;bottom:10px;left:10px;font-family:monospace;font-size:9px;color:#8aa;">Canal Beagle</div>
+            <!-- pins -->
+            <span style="position:absolute;top:24%;left:22%;width:18px;height:18px;border-radius:50%;background:#2C5F6F;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.3);"></span>
+            <span style="position:absolute;top:40%;left:54%;width:18px;height:18px;border-radius:50%;background:#2C5F6F;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.3);display:flex;align-items:center;justify-content:center;font-size:10px;color:#fff;">✓</span>
+            <span style="position:absolute;top:56%;left:33%;width:18px;height:18px;border-radius:50%;background:#B5651D;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.3);"></span>
+            <span style="position:absolute;top:50%;left:72%;width:18px;height:18px;border-radius:50%;background:#2C5F6F;border:2px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,.3);"></span>
+            <!-- Fin bubble -->
+            <div style="position:absolute;top:8px;left:8px;right:8px;background:#fff;border:2px solid #2C5F6F;border-radius:10px;padding:8px 10px;display:flex;gap:8px;align-items:center;">
+              <span style="width:26px;height:26px;border-radius:50%;border:2px solid #2C5F6F;flex-shrink:0;display:flex;align-items:center;justify-content:center;"><span style="width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:9px solid #2C5F6F;"></span></span>
+              <span style="font-size:10px;line-height:1.25;flex:1;">Como elegiste 2h y está soleado, armé 3 paradas cerca del puerto.</span>
+              <span style="font-size:11px;color:#2C5F6F;font-weight:700;white-space:nowrap;">🔊</span>
+            </div>
+            <!-- badge -->
+            <div style="position:absolute;top:88px;right:8px;background:#2b2b29;color:#fff;font-size:9px;padding:3px 7px;border-radius:10px;">3/10 descubiertos</div>
+          </div>
+          <!-- card list -->
+          <div style="background:#fcfbf8;padding:8px 10px;display:flex;flex-direction:column;gap:6px;border-top:2px solid #e0ddd3;">
+            <div style="border:1.5px solid #d4d1c9;border-radius:8px;padding:7px 9px;display:flex;align-items:center;gap:8px;"><span style="width:14px;height:14px;border-radius:50%;background:#2C5F6F;flex-shrink:0;"></span><span style="font-size:11px;font-weight:700;flex:1;">Museo del Fin del Mundo</span><span style="font-size:9px;color:#8a867a;">🏠 0.3km · 25′</span></div>
+            <div style="border:1.5px solid #d4d1c9;border-radius:8px;padding:7px 9px;display:flex;align-items:center;gap:8px;"><span style="width:14px;height:14px;border-radius:50%;background:#B5651D;flex-shrink:0;"></span><span style="font-size:11px;font-weight:700;flex:1;">Tejidos de lenga (MOCK)</span><span style="font-size:9px;color:#8a867a;">🌳 0.5km · 20′</span></div>
+          </div>
+          <div style="display:flex;gap:6px;padding:8px 10px 12px;">
+            <div style="flex:1;background:#2C5F6F;color:#fff;border-radius:9px;padding:10px;text-align:center;font-size:11px;font-weight:700;">Ver ruta →</div>
+            <div style="flex:1;border:2px solid #2C5F6F;color:#2C5F6F;border-radius:9px;padding:10px;text-align:center;font-size:11px;font-weight:700;">Impacto turismo</div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;text-align:center;">D · Mapa principal<br><span style="font-size:14px;font-weight:400;color:#6b675c;">mapa + lista de tarjetas debajo</span></figcaption>
+    </figure>
+
+    <div style="align-self:center;font-family:'Caveat';font-size:22px;font-weight:700;color:#9c988c;padding-top:40px;text-align:center;">variante<br>↓</div>
+
+    <!-- D2 · MAPA variante (bottom-sheet peek) -->
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;">
+          <div style="background:#2C5F6F;color:#fff;padding:9px 12px;display:flex;align-items:center;justify-content:space-between;">
+            <span style="font-family:'Caveat';font-size:18px;font-weight:700;">Sendero Fueguino</span>
+            <span style="display:flex;gap:4px;font-size:13px;"><span style="opacity:.7;">☀️</span><span style="background:#fff;color:#2C5F6F;border-radius:5px;padding:1px 4px;">🌧️</span><span style="opacity:.7;">💨</span><span style="margin-left:4px;">🌐</span><span>⚙️</span></span>
+          </div>
+          <div style="flex:1;position:relative;background:#e8ece9;overflow:hidden;">
+            <div style="position:absolute;top:28%;left:-10%;width:120%;height:7px;background:#d2d6d2;transform:rotate(-6deg);"></div>
+            <div style="position:absolute;top:0;left:46%;width:7px;height:100%;background:#d2d6d2;transform:rotate(-4deg);"></div>
+            <span style="position:absolute;top:30%;left:30%;width:18px;height:18px;border-radius:50%;background:#2C5F6F;border:2px solid #fff;"></span>
+            <span style="position:absolute;top:24%;left:60%;width:18px;height:18px;border-radius:50%;background:#B5651D;border:2px solid #fff;"></span>
+            <span style="position:absolute;top:40%;left:48%;width:24px;height:24px;border-radius:50%;background:#2C5F6F;border:3px solid #ffd27a;"></span>
+            <div style="position:absolute;top:8px;left:8px;background:#fff;border:2px solid #2C5F6F;border-radius:8px;padding:5px 8px;font-size:9px;display:flex;gap:5px;align-items:center;">🌧️ Llueve → prioricé indoor 🔊</div>
+            <div style="position:absolute;top:8px;right:8px;background:#2b2b29;color:#fff;font-size:9px;padding:3px 7px;border-radius:10px;">1/10</div>
+          </div>
+          <!-- peeking bottom sheet -->
+          <div style="background:#fff;border-top:2px solid #2C5F6F;border-radius:16px 16px 0 0;padding:8px 12px 14px;box-shadow:0 -3px 8px rgba(0,0,0,.08);">
+            <div style="width:38px;height:4px;border-radius:2px;background:#d4d1c9;margin:0 auto 8px;"></div>
+            <div style="font-size:10px;color:#8a867a;margin-bottom:6px;">Desliza para ver las 3 paradas ▴</div>
+            <div style="border:1.5px solid #d4d1c9;border-radius:8px;padding:7px 9px;display:flex;align-items:center;gap:8px;margin-bottom:6px;"><span style="width:14px;height:14px;border-radius:50%;background:#2C5F6F;flex-shrink:0;"></span><span style="font-size:11px;font-weight:700;flex:1;">Museo Yámana</span><span style="font-size:9px;color:#8a867a;">🏠 0.4km</span></div>
+            <div style="display:flex;gap:6px;"><div style="flex:1;background:#2C5F6F;color:#fff;border-radius:9px;padding:9px;text-align:center;font-size:11px;font-weight:700;">Ver ruta →</div><div style="flex:1;border:2px solid #2C5F6F;color:#2C5F6F;border-radius:9px;padding:9px;text-align:center;font-size:11px;font-weight:700;">Impacto</div></div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;text-align:center;">D · variante<br><span style="font-size:14px;font-weight:400;color:#6b675c;">mapa full + bottom-sheet de paradas</span></figcaption>
+    </figure>
+
+    <div style="align-self:center;font-family:'Caveat';font-size:38px;font-weight:700;color:#2C5F6F;padding-top:40px;">→</div>
+
+    <!-- E · FICHA bottom-sheet -->
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;position:relative;">
+          <!-- dimmed map behind -->
+          <div style="height:90px;background:#dfe3e0;position:relative;flex-shrink:0;">
+            <span style="position:absolute;top:30px;left:60px;width:16px;height:16px;border-radius:50%;background:#B5651D;border:2px solid #fff;"></span>
+            <div style="position:absolute;inset:0;background:rgba(43,43,41,0.35);"></div>
+          </div>
+          <!-- sheet -->
+          <div style="flex:1;background:#fcfbf8;border-radius:18px 18px 0 0;margin-top:-14px;padding:12px 16px;display:flex;flex-direction:column;gap:9px;overflow:hidden;position:relative;z-index:2;">
+            <div style="display:flex;align-items:center;justify-content:space-between;"><span style="width:38px;height:4px;border-radius:2px;background:#d4d1c9;"></span><span style="font-size:14px;color:#8a867a;">✕</span></div>
+            <div style="display:flex;align-items:center;gap:8px;"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #B5651D;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><span style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:10px solid #B5651D;"></span></span><span style="font-family:'Caveat';font-size:18px;font-weight:700;">Fin te recomienda…</span></div>
+            <span style="background:#D98E04;color:#fff;font-size:9px;font-weight:700;padding:3px 8px;border-radius:4px;align-self:flex-start;letter-spacing:.3px;">PRODUCTOR LOCAL · DATOS SIMULADOS (MOCK)</span>
+            <div style="font-family:'Caveat';font-size:23px;font-weight:700;line-height:1;">Tejidos de lenga</div>
+            <!-- datos prácticos grid -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;">
+              <div style="border:1.5px solid #e0ddd3;border-radius:7px;padding:6px;font-size:10px;">📍 0.5 km del puerto</div>
+              <div style="border:1.5px solid #e0ddd3;border-radius:7px;padding:6px;font-size:10px;">⏱️ 20 min</div>
+              <div style="border:1.5px solid #e0ddd3;border-radius:7px;padding:6px;font-size:10px;">💰 $ estimado</div>
+              <div style="border:1.5px solid #e0ddd3;border-radius:7px;padding:6px;font-size:10px;">♿ Accesible</div>
+              <div style="border:1.5px solid #e0ddd3;border-radius:7px;padding:6px;font-size:10px;">🗣️ ES / EN</div>
+              <div style="border:1.5px solid #e0ddd3;border-radius:7px;padding:6px;font-size:10px;">🕒 10–18 h</div>
+            </div>
+            <!-- texto curado -->
+            <div style="display:flex;flex-direction:column;gap:4px;margin-top:2px;">
+              <div style="height:7px;background:#d4d1c9;border-radius:4px;width:100%;"></div>
+              <div style="height:7px;background:#d4d1c9;border-radius:4px;width:96%;"></div>
+              <div style="height:7px;background:#d4d1c9;border-radius:4px;width:88%;"></div>
+              <div style="height:7px;background:#d4d1c9;border-radius:4px;width:70%;"></div>
+            </div>
+            <div style="font-size:9px;color:#8a867a;font-style:italic;">Datos del productor simulados para la demo (MOCK).</div>
+            <div style="display:flex;gap:6px;margin-top:auto;">
+              <div style="flex:1;border:2px solid #2C5F6F;color:#2C5F6F;border-radius:9px;padding:10px;text-align:center;font-size:11px;font-weight:700;">🔊 Escuchar</div>
+              <div style="flex:1;background:#2C5F6F;color:#fff;border-radius:9px;padding:10px;text-align:center;font-size:11px;font-weight:700;">+ Agregar a ruta</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;text-align:center;">E · Ficha de actividad<br><span style="font-size:14px;font-weight:400;color:#6b675c;">bottom-sheet ~70% · TTS</span></figcaption>
+    </figure>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 3 — SALIDA: RUTA & CONTRASTE -->
+  <!-- ============================================================ -->
+  <div style="max-width:1320px; margin:0 auto 14px; display:flex; align-items:center; gap:14px;">
+    <span style="width:40px;height:40px;border-radius:50%;background:#2C5F6F;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Caveat';font-size:26px;font-weight:700;flex-shrink:0;">3</span>
+    <span style="font-family:'Caveat',cursive; font-size:32px; font-weight:700;">Salidas del mapa</span>
+    <span style="font-size:15px; color:#6b675c;">— ruta paso a paso y el mensaje de contraste turístico</span>
+  </div>
+  <div style="max-width:1320px; margin:0 auto 56px; display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap;">
+
+    <!-- F · RUTA -->
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;padding:14px 16px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:#8a867a;margin-bottom:10px;"><span>9:41</span><span>▴ ▮ ▰</span></div>
+          <div style="font-family:'Caveat';font-size:23px;font-weight:700;line-height:1;">Tu recorrido sugerido</div>
+          <div style="font-size:12px;color:#6b675c;margin-bottom:14px;">3 paradas · 2 h aprox.</div>
+          <div style="display:flex;flex-direction:column;gap:0;flex:1;">
+            <!-- step 1 -->
+            <div style="display:flex;gap:10px;">
+              <div style="display:flex;flex-direction:column;align-items:center;"><span style="width:26px;height:26px;border-radius:50%;background:#2C5F6F;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0;">1</span><span style="flex:1;width:2px;background:#d4d1c9;"></span></div>
+              <div style="padding-bottom:14px;"><div style="font-size:12px;font-weight:700;">Museo del Fin del Mundo 🏠</div><div style="font-size:10px;color:#2C5F6F;">09:00 – 09:25</div><div style="height:6px;background:#d4d1c9;border-radius:3px;width:85%;margin-top:5px;"></div></div>
+            </div>
+            <div style="display:flex;gap:10px;">
+              <div style="display:flex;flex-direction:column;align-items:center;"><span style="width:26px;height:26px;border-radius:50%;background:#2C5F6F;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0;">2</span><span style="flex:1;width:2px;background:#d4d1c9;"></span></div>
+              <div style="padding-bottom:14px;"><div style="font-size:12px;font-weight:700;">Tejidos de lenga 🌳 <span style="background:#D98E04;color:#fff;font-size:8px;padding:1px 4px;border-radius:3px;">MOCK</span></div><div style="font-size:10px;color:#2C5F6F;">09:35 – 09:55</div><div style="height:6px;background:#d4d1c9;border-radius:3px;width:78%;margin-top:5px;"></div></div>
+            </div>
+            <div style="display:flex;gap:10px;">
+              <div style="display:flex;flex-direction:column;align-items:center;"><span style="width:26px;height:26px;border-radius:50%;background:#2C5F6F;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;flex-shrink:0;">3</span></div>
+              <div><div style="font-size:12px;font-weight:700;">Museo Yámana 🏠</div><div style="font-size:10px;color:#2C5F6F;">10:05 – 10:30</div><div style="height:6px;background:#d4d1c9;border-radius:3px;width:80%;margin-top:5px;"></div></div>
+            </div>
+          </div>
+          <div style="background:#eef2f0;border:2px solid #c7d3cf;border-radius:9px;padding:9px;font-size:11px;margin-bottom:10px;">🚶 Regreso al puerto ~10:45 — entrás cómodo a tu crucero.</div>
+          <div style="display:flex;gap:6px;"><div style="flex:1;border:2px solid #2C5F6F;color:#2C5F6F;border-radius:9px;padding:10px;text-align:center;font-size:11px;font-weight:700;">← Mapa</div><div style="flex:1;background:#2C5F6F;color:#fff;border-radius:9px;padding:10px;text-align:center;font-size:11px;font-weight:700;">Impacto turismo</div></div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;text-align:center;">F · Ruta sugerida<br><span style="font-size:14px;font-weight:400;color:#6b675c;">timeline con horarios calculados</span></figcaption>
+    </figure>
+
+    <div style="align-self:center;font-family:'Caveat';font-size:38px;font-weight:700;color:#2C5F6F;padding-top:40px;">→</div>
+
+    <!-- G · CONTRASTE -->
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;padding:14px 16px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:#8a867a;margin-bottom:10px;"><span>9:41</span><span>▴ ▮ ▰</span></div>
+          <div style="font-family:'Caveat';font-size:24px;font-weight:700;line-height:1.05;margin-bottom:8px;">Dos formas de conocer Ushuaia</div>
+          <!-- narrative -->
+          <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:6px;">
+            <div style="height:7px;background:#d4d1c9;border-radius:4px;width:100%;"></div>
+            <div style="height:7px;background:#d4d1c9;border-radius:4px;width:94%;"></div>
+            <div style="height:7px;background:#d4d1c9;border-radius:4px;width:60%;"></div>
+          </div>
+          <!-- big stat -->
+          <div style="display:flex;gap:8px;margin-bottom:10px;">
+            <div style="flex:1;background:#eef2f0;border-radius:8px;padding:8px;text-align:center;"><div style="font-family:'Caveat';font-size:22px;font-weight:700;color:#2C5F6F;line-height:1;">173.211</div><div style="font-size:8px;color:#6b675c;">cruceristas 23/24</div></div>
+            <div style="flex:1;background:#eef2f0;border-radius:8px;padding:8px;text-align:center;"><div style="font-family:'Caveat';font-size:22px;font-weight:700;color:#2C5F6F;line-height:1;">64%</div><div style="font-size:8px;color:#6b675c;">tránsito de pocas horas</div></div>
+          </div>
+          <!-- compare cards -->
+          <div style="border:2px solid #d4d1c9;border-radius:10px;padding:9px;margin-bottom:8px;">
+            <div style="font-size:12px;font-weight:700;margin-bottom:4px;">🚌 Circuito masivo</div>
+            <div style="font-size:10px;color:#6b675c;line-height:1.3;">Av. San Martín + Parque Nacional · miles de visitantes por día.</div>
+          </div>
+          <div style="border:2px solid #2C5F6F;background:#eaf1f3;border-radius:10px;padding:9px;margin-bottom:auto;">
+            <div style="font-size:12px;font-weight:700;margin-bottom:4px;color:#1f4753;">🚶 Sendero Fueguino</div>
+            <div style="font-size:10px;color:#1f4753;line-height:1.3;">8 sitios + productores · &lt;20 min a pie · contado por Fin.</div>
+          </div>
+          <div style="background:#2C5F6F;color:#fff;border-radius:10px;padding:12px;text-align:center;font-size:13px;font-weight:700;margin-top:10px;">Ver el mapa →</div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;text-align:center;">G · Contraste de circuitos<br><span style="font-size:14px;font-weight:400;color:#6b675c;">narrativa + 2 tarjetas comparativas</span></figcaption>
+    </figure>
+
+    <div style="align-self:center;max-width:240px;font-size:13px;color:#6b675c;line-height:1.5;background:#fcfbf8;border:2px dashed #c4c0b4;border-radius:12px;padding:14px 16px;">
+      <b style="font-family:'Caveat';font-size:18px;color:#2b2b29;">Accesos</b><br>
+      G se alcanza desde D (botón "Impacto turismo") y desde F. Ambas salidas vuelven al mapa, manteniéndolo siempre montado.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 4 — PANEL COMERCIANTE -->
+  <!-- ============================================================ -->
+  <div style="max-width:1320px; margin:0 auto 14px; display:flex; align-items:center; gap:14px;">
+    <span style="width:40px;height:40px;border-radius:50%;background:#B5651D;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Caveat';font-size:26px;font-weight:700;flex-shrink:0;">4</span>
+    <span style="font-family:'Caveat',cursive; font-size:32px; font-weight:700;">Panel comerciante</span>
+    <span style="font-size:15px; color:#6b675c;">— acceso aparte (link discreto en footer), fuera del flujo turista · opcional</span>
+  </div>
+  <div style="max-width:1320px; margin:0 auto 20px; display:flex; gap:22px; align-items:flex-start; flex-wrap:wrap;">
+
+    <!-- H · PANEL -->
+    <figure style="margin:0; display:flex; flex-direction:column; gap:12px; align-items:center; width:270px;">
+      <div style="width:270px;height:580px;background:#2b2b29;border-radius:34px;padding:9px;box-shadow:6px 6px 0 rgba(0,0,0,0.14);">
+        <div style="width:100%;height:100%;background:#fcfbf8;border-radius:26px;overflow:hidden;display:flex;flex-direction:column;padding:14px 16px;">
+          <div style="display:flex;justify-content:space-between;font-size:11px;color:#8a867a;margin-bottom:10px;"><span>9:41</span><span>▴ ▮ ▰</span></div>
+          <div style="font-family:'Caveat';font-size:23px;font-weight:700;line-height:1;">Sumá tu emprendimiento</div>
+          <div style="font-size:10px;color:#8a867a;background:#fff7e6;border:1.5px solid #ecd9a8;border-radius:7px;padding:6px 8px;margin:8px 0 12px;">Versión de prueba — los datos no se publican automáticamente.</div>
+          <div style="display:flex;flex-direction:column;gap:9px;flex:1;">
+            <div><div style="font-size:10px;font-weight:700;margin-bottom:3px;">Nombre *</div><div style="border:2px solid #d4534e;border-radius:7px;padding:8px;font-size:10px;color:#d4534e;">⚠ Campo obligatorio</div></div>
+            <div><div style="font-size:10px;font-weight:700;margin-bottom:3px;">Rubro *</div><div style="border:2px solid #c4c0b4;border-radius:7px;padding:8px;font-size:10px;color:#8a867a;display:flex;justify-content:space-between;">Seleccionar… <span>▾</span></div></div>
+            <div><div style="font-size:10px;font-weight:700;margin-bottom:3px;">Descripción corta</div><div style="border:2px solid #c4c0b4;border-radius:7px;padding:8px;height:42px;font-size:9px;color:#a9a597;">0 / 140</div></div>
+            <div style="display:flex;gap:7px;"><div style="flex:1;"><div style="font-size:10px;font-weight:700;margin-bottom:3px;">Contacto</div><div style="border:2px solid #c4c0b4;border-radius:7px;padding:8px;height:18px;"></div></div><div style="flex:1;"><div style="font-size:10px;font-weight:700;margin-bottom:3px;">Horario</div><div style="border:2px solid #c4c0b4;border-radius:7px;padding:8px;height:18px;"></div></div></div>
+          </div>
+          <div style="background:#B5651D;color:#fff;border-radius:10px;padding:12px;text-align:center;font-size:13px;font-weight:700;margin:10px 0 8px;">Enviar</div>
+          <div style="font-size:10px;font-weight:700;color:#6b675c;">Emprendimientos sumados hoy</div>
+          <div style="border:1.5px solid #e0ddd3;border-radius:7px;padding:6px 8px;font-size:10px;margin-top:4px;display:flex;justify-content:space-between;">Chocolates del Beagle <span style="background:#D98E04;color:#fff;font-size:8px;padding:1px 4px;border-radius:3px;">MOCK</span></div>
+        </div>
+      </div>
+      <figcaption style="font-family:'Caveat';font-size:21px;font-weight:700;text-align:center;">H · Panel comerciante<br><span style="font-size:14px;font-weight:400;color:#6b675c;">form + validación · modo offline si no hay server</span></figcaption>
+    </figure>
+
+    <div style="align-self:center;max-width:300px;font-size:14px;color:#6b675c;line-height:1.5;background:#fcfbf8;border:2px dashed #c4c0b4;border-radius:12px;padding:16px 18px;">
+      <b style="font-family:'Caveat';font-size:19px;color:#2b2b29;">Primero en cortarse</b><br>
+      Según la sección 14 del doc, H + server.js son lo primero a recortar si falta tiempo: se reemplaza el link del footer por "Próximamente", sin impacto en el flujo del turista. Por eso lo separo del resto.
+    </div>
+  </div>
+
+  <div style="max-width:1320px;margin:30px auto 0;text-align:center;font-size:13px;color:#9c988c;">Wireframes lo-fi · estructura y flujo, no diseño final · paleta y tipografía finales se definen en alta fidelidad</div>
+
+</div>
+</x-dc>
+</body>
+</html>

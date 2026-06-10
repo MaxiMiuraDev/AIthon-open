@@ -1,0 +1,8 @@
+{
+  "escenario_activo": "soleado",
+  "escenarios": {
+    "soleado": { "label": "Soleado / despejado", "icono": "☀️", "temp_aprox_c": 12 },
+    "lluvia": { "label": "Lluvia", "icono": "🌧️", "temp_aprox_c": 7 },
+    "viento": { "label": "Viento fuerte", "icono": "💨", "temp_aprox_c": 5 }
+  }
+}

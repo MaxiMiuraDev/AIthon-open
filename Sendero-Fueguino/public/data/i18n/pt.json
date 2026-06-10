@@ -1,0 +1,24 @@
+{
+  "_nota": "Estructura parcial (placeholder) - prioridad es.json. Completar si hay tiempo.",
+  "app_nombre": "Sendero Fueguino",
+  "bienvenida": {
+    "titulo": "Sendero Fueguino",
+    "subtitulo": "Um passeio a pé pelo centro de Ushuaia, narrado por Fin",
+    "boton_empezar": "Começar passeio →"
+  },
+  "idioma": {
+    "titulo": "Escolha seu idioma",
+    "es": "Español",
+    "en": "English",
+    "pt": "Português",
+    "badge_parcial": "conteúdo parcial"
+  },
+  "tiempo": {
+    "titulo": "Quanto tempo você tem hoje?",
+    "2h": "2 horas",
+    "4h": "4 horas",
+    "6h": "6 horas",
+    "8h": "8 horas",
+    "boton_continuar": "Continuar"
+  }
+}
