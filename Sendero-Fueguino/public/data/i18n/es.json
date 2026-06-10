@@ -1,0 +1,130 @@
+{
+  "app_nombre": "Sendero Fueguino",
+  "bienvenida": {
+    "titulo": "Sendero Fueguino",
+    "subtitulo": "Un recorrido a pie por el centro de Ushuaia, contado por Fin",
+    "disclaimer_titulo": "Sobre Fin, tu guía",
+    "disclaimer_texto": "Este personaje es una representación narrativa con fines educativos, inspirada en la cultura Yagán/Selk'nam, basada en fuentes públicas y académicas citadas (Museo Yámana, Museo del Fin del Mundo). No representa ni habla en nombre de las comunidades originarias actuales.",
+    "boton_empezar": "Empezar recorrido →",
+    "nota_audio": "Funciona mejor con sonido activado 🔊"
+  },
+  "idioma": {
+    "titulo": "¿En qué idioma te mostramos el recorrido?",
+    "es": "Español",
+    "en": "English",
+    "pt": "Português",
+    "badge_parcial": "contenido parcial"
+  },
+  "tiempo": {
+    "titulo": "¿Cuánto tiempo tenés disponible hoy?",
+    "2h": "2 horas",
+    "2h_desc": "Recorrido exprés cerca del puerto",
+    "4h": "4 horas",
+    "4h_desc": "Recorrido moderado",
+    "6h": "6 horas",
+    "6h_desc": "Recorrido completo + un productor local",
+    "8h": "8 horas",
+    "8h_desc": "Día completo",
+    "boton_continuar": "Continuar"
+  },
+  "intereses": {
+    "titulo": "¿Qué te interesa más?",
+    "gastronomia": "Gastronomía",
+    "cultura": "Cultura",
+    "compras_locales": "Compras locales",
+    "naturaleza": "Naturaleza",
+    "talleres": "Talleres",
+    "museos": "Museos",
+    "indoor": "Indoor (refugio del clima)",
+    "nota_ninguno": "Si no elegís nada, te mostramos un poco de todo",
+    "accesibilidad_titulo": "Necesito un recorrido accesible (sin escaleras, superficies parejas)",
+    "boton_ver_recorrido": "Ver mi recorrido",
+    "boton_atras": "Atrás",
+    "cargando": "Fin está armando tu recorrido..."
+  },
+  "mapa": {
+    "ver_ruta": "Ver ruta sugerida",
+    "ver_impacto": "Ver impacto del turismo",
+    "cambiar_idioma": "Cambiar idioma",
+    "cambiar_preferencias": "Cambiar preferencias",
+    "leyenda_poi": "Sitio histórico",
+    "leyenda_productor": "Productor local",
+    "badge_visitados": "{n}/{total} puntos descubiertos",
+    "vacio_mensaje": "No encontré paradas que cumplan exactamente lo que pediste. Te muestro las 3 más cercanas igual.",
+    "error_mapa": "No se pudo cargar el mapa (revisá tu conexión). Podés seguir explorando los puntos desde la lista de abajo."
+  },
+  "fin_mensajes": {
+    "saludo_template": "Como elegiste {tiempo}h y hoy está {clima}, te armé un recorrido de {n} paradas, priorizando {intereses}."
+  },
+  "ficha": {
+    "fin_te_cuenta": "Fin te cuenta...",
+    "fin_te_recomienda": "Fin te recomienda...",
+    "boton_escuchar": "🔊 Escuchar",
+    "boton_pausar": "⏸ Pausar",
+    "boton_cerrar": "Cerrar",
+    "boton_volver_mapa": "Volver al mapa",
+    "boton_agregar_ruta": "Agregar a mi ruta",
+    "boton_quitar_ruta": "Quitar de mi ruta",
+    "fuente_label": "Fuente:",
+    "datos_practicos_titulo": "Datos prácticos",
+    "distancia_label": "Distancia desde el puerto",
+    "duracion_label": "Duración estimada",
+    "precio_label": "Precio estimado",
+    "accesibilidad_label": "Accesibilidad",
+    "idioma_label": "Idioma disponible",
+    "horario_label": "Horario",
+    "no_disponible": "No disponible",
+    "tts_no_soportado": "Tu navegador no soporta lectura en voz alta. Podés leer el texto completo arriba.",
+    "badge_mock": "PRODUCTOR LOCAL · DATOS SIMULADOS (MOCK)",
+    "mock_nota": "Este es un ejemplo ilustrativo para la demo (MOCK_PRODUCER). No representa un comercio real ni una transacción.",
+    "accesibilidad_valores": {
+      "accesible": "Accesible",
+      "parcial": "Acceso parcial",
+      "no_accesible": "No accesible"
+    }
+  },
+  "ruta": {
+    "titulo_template": "Tu recorrido sugerido — {n} paradas, {tiempo} aprox.",
+    "regreso_label": "Horario estimado de regreso al puerto/crucero",
+    "boton_volver_mapa": "Volver al mapa",
+    "boton_ver_impacto": "Ver impacto del turismo",
+    "vacio_mensaje": "Todavía no armaste tu recorrido. Volvé al mapa y elegí algunas paradas.",
+    "aviso_excede_tiempo": "Este recorrido te puede llevar más tiempo del que tenés disponible. Considerá sacar alguna parada."
+  },
+  "contraste": {
+    "titulo": "Dos formas de conocer Ushuaia",
+    "parrafo_1": "En la temporada 2023/24, **173.211 personas** llegaron a Ushuaia en cruceros — un 59% más que siete años antes. De ellas, **6 de cada 10** están de paso hacia la Antártida y solo tienen unas pocas horas en tierra. La mayoría sigue el mismo recorrido: el centro comercial de Av. San Martín y, si hay tiempo, una excursión al Parque Nacional Tierra del Fuego, que en 2024 recibió un récord de **494.202 visitas** (61% de visitantes no residentes).",
+    "parrafo_2": "Pero a metros del puerto, caminando, hay otra Ushuaia: la de los edificios históricos del centro, las casas de principios del siglo XX, los lugares de memoria y los pequeños productores locales. Esta gente casi no aparece en las estadísticas oficiales de turismo —ni siquiera en la estadía promedio de 2,9 días, que mide a otro tipo de visitante—. Es, literalmente, un **flujo invisible**.",
+    "parrafo_3": "Sendero Fueguino te propone ese segundo camino: un recorrido a pie de **menos de 20 minutos** desde el puerto, por 8 sitios históricos y algunos productores locales, contado por Fin.",
+    "tarjeta_masivo_titulo": "🚌 CIRCUITO MASIVO",
+    "tarjeta_masivo_texto": "Av. San Martín + excursión al Parque Nacional. Miles de visitantes/día en temporada alta.",
+    "tarjeta_alternativo_titulo": "🚶 CIRCUITO SENDERO FUEGUINO",
+    "tarjeta_alternativo_texto": "8 sitios históricos + productores locales. A pie, menos de 20 min desde el puerto. Contado por Fin.",
+    "boton_ver_mapa": "Ver el mapa →",
+    "boton_volver": "← Volver"
+  },
+  "clima": {
+    "soleado": "Soleado",
+    "lluvia": "Lluvia",
+    "viento": "Viento fuerte",
+    "selector_label": "Clima (demo)"
+  },
+  "comerciante": {
+    "titulo": "Sumá tu emprendimiento a Sendero Fueguino",
+    "nota_demo": "Esta es una versión de prueba — los datos no se publican automáticamente.",
+    "label_nombre": "Nombre del emprendimiento",
+    "label_rubro": "Rubro",
+    "label_descripcion": "Descripción corta",
+    "label_contacto": "Contacto (teléfono o Instagram)",
+    "label_horario": "Horario de atención",
+    "boton_enviar": "Enviar",
+    "boton_enviando": "Enviando...",
+    "exito": "¡Listo! Tu emprendimiento fue agregado.",
+    "error_guardar": "No pudimos guardar tu información ahora. Probá de nuevo en un momento.",
+    "modo_offline": "Modo demo: esto no se guarda en el servidor, pero podés verlo acá abajo.",
+    "lista_titulo": "Emprendimientos sumados hoy",
+    "lista_vacia": "Todavía no se sumó nadie. ¡Sé el primero!",
+    "rubros": ["Gastronomía", "Artesanías", "Indumentaria", "Talleres", "Otro"],
+    "link_footer": "¿Sos comerciante/productor local? Sumate acá"
+  }
+}

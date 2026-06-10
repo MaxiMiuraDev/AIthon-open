@@ -1,0 +1,13 @@
+[
+  { "poi_id": "poi_01", "horario_apertura": "10:00", "horario_cierre": "19:00", "dias_cerrado": [], "duracion_visita_min": 40, "tiempo_traslado_siguiente_min": 5 },
+  { "poi_id": "poi_02", "horario_apertura": "10:00", "horario_cierre": "19:00", "dias_cerrado": [], "duracion_visita_min": 45, "tiempo_traslado_siguiente_min": 8 },
+  { "poi_id": "poi_03", "horario_apertura": "09:00", "horario_cierre": "20:00", "dias_cerrado": [], "duracion_visita_min": 60, "tiempo_traslado_siguiente_min": 12 },
+  { "poi_id": "poi_04", "horario_apertura": "00:00", "horario_cierre": "23:59", "dias_cerrado": [], "duracion_visita_min": 20, "tiempo_traslado_siguiente_min": 2 },
+  { "poi_id": "poi_05", "horario_apertura": "10:00", "horario_cierre": "18:00", "dias_cerrado": ["lunes"], "duracion_visita_min": 30, "tiempo_traslado_siguiente_min": 10 },
+  { "poi_id": "poi_06", "horario_apertura": "09:00", "horario_cierre": "19:00", "dias_cerrado": [], "duracion_visita_min": 15, "tiempo_traslado_siguiente_min": 6 },
+  { "poi_id": "poi_07", "horario_apertura": "00:00", "horario_cierre": "23:59", "dias_cerrado": [], "duracion_visita_min": 15, "tiempo_traslado_siguiente_min": 5 },
+  { "poi_id": "poi_08", "horario_apertura": "00:00", "horario_cierre": "23:59", "dias_cerrado": [], "duracion_visita_min": 15, "tiempo_traslado_siguiente_min": 8 },
+  { "poi_id": "mock_producer_01", "horario_apertura": "10:00", "horario_cierre": "20:00", "dias_cerrado": [], "duracion_visita_min": 20, "tiempo_traslado_siguiente_min": 10 },
+  { "poi_id": "mock_producer_02", "horario_apertura": "10:00", "horario_cierre": "21:00", "dias_cerrado": [], "duracion_visita_min": 15, "tiempo_traslado_siguiente_min": 7 },
+  { "poi_id": "mock_producer_03", "horario_apertura": "10:00", "horario_cierre": "20:00", "dias_cerrado": [], "duracion_visita_min": 20, "tiempo_traslado_siguiente_min": 8 }
+]

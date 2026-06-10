@@ -1,0 +1,29 @@
+[
+  {
+    "id": "MOCK_PRODUCER_01",
+    "nombre": "Ahumadero familiar — Centolla y trucha ahumada",
+    "rubro": "Gastronomía",
+    "descripcion": "Ahumados de centolla, trucha y cordero fueguino con leña de lenga.",
+    "contacto": "",
+    "horario": "10:00 - 20:00",
+    "creado_via_panel": false
+  },
+  {
+    "id": "MOCK_PRODUCER_02",
+    "nombre": "Mermeladas y licores artesanales",
+    "rubro": "Gastronomía",
+    "descripcion": "Mermeladas y licores de calafate, rosa mosqueta y ruibarbo.",
+    "contacto": "",
+    "horario": "10:00 - 21:00",
+    "creado_via_panel": false
+  },
+  {
+    "id": "MOCK_PRODUCER_03",
+    "nombre": "Taller de madera de lenga y tejidos",
+    "rubro": "Artesanías",
+    "descripcion": "Artesanías en madera de lenga y tejidos en lana patagónica, hechos a mano.",
+    "contacto": "",
+    "horario": "10:00 - 20:00",
+    "creado_via_panel": false
+  }
+]
