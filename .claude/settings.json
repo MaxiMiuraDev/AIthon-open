@@ -23,7 +23,8 @@
       "Bash(gh auth *)",
       "Bash(gh repo *)",
       "Bash(git init *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ],
     "additionalDirectories": [
       "c:\\Users\\Usuario\\Desktop\\Claudia\\AIThon\\.claude"

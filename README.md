@@ -18,3 +18,7 @@ Proyecto de trabajo para el AIthon: construir un MVP de IA para una problemátic
 6. `pitch-demo` arma el pitch final.
 
 Ver `prompts_default/resumen.md` y `prompts_default/run.md` para más detalle.
+
+## Estado actual
+
+Ver [`CONTEXTO.md`](CONTEXTO.md) para el resumen de avance, qué está definido y cuáles son los próximos pasos.
