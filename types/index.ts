@@ -32,6 +32,8 @@ export interface POI {
   idiomas: string[];
   horarios: string;
   clima_recomendado: CondicionClima[];
+  /** El POI solo puede visitarse como parte de una navegación. */
+  requiere_navegacion?: boolean;
 }
 
 export interface Ruta {
@@ -125,3 +127,19 @@ export interface RecomendacionData {
 }
 
 export type RecomendacionResponse = ApiResponse<RecomendacionData>;
+
+// Chat turistico mock (POST /api/chat)
+export type ChatLang = "es" | "en" | "pt" | "de" | "zh" | "he";
+export type ChatRole = "user" | "assistant";
+export interface ChatMessage { role: ChatRole; content: string; }
+export type ChatToolName = "consultarClima" | "recomendar" | "buscarPOIs" | "infoRuta";
+export type ChatToolUsed = ChatToolName | "ninguna";
+export type ChatClima = Omit<Clima, "nota_demo">;
+export type ChatToolData = ChatClima | POI[] | RutaConPOIs[] | RecomendacionData;
+export interface ChatData {
+  respuesta: string;
+  /** Como maximo se ejecuta una tool por mensaje. */
+  toolUsada: ChatToolUsed;
+  data: ChatToolData | null;
+}
+export type ChatResponse = ApiResponse<ChatData>;

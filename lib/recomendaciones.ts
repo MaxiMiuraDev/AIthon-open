@@ -160,7 +160,7 @@ export function generarRecomendaciones(
 
 /**
  * Supuesto: el tiempo total de una ruta = suma de duraciones de sus POIs
- * (duracion_total_min) + traslado estimado sobre distancia_total_km. Se elige
+ * (duracion_total_min) + traslado ida y vuelta estimado sobre distancia_total_km. Se elige
  * la ruta de mayor score (mismo criterio clima/cercanía/accesibilidad) que
  * entre en el tiempo disponible.
  */
@@ -178,7 +178,7 @@ function mejorRuta(
       const miembros = ruta.pois
         .map((id) => poisPorId.get(id))
         .filter((p): p is POI => p !== undefined);
-      const tiempoTotal = ruta.duracion_total_min + estimarTrasladoMin(ruta.distancia_total_km);
+      const tiempoTotal = ruta.duracion_total_min + 2 * estimarTrasladoMin(ruta.distancia_total_km);
       return { ruta, miembros, tiempoTotal };
     })
     .filter(({ ruta, miembros, tiempoTotal }) => {

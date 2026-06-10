@@ -38,6 +38,7 @@ export const PoiSchema = z.object({
   idiomas: z.array(z.string()).min(1),
   horarios: z.string(),
   clima_recomendado: z.array(CondicionClimaSchema).min(1),
+  requiere_navegacion: z.boolean().optional(),
 });
 
 export const RutaSchema = z.object({
