@@ -1,0 +1,15 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+*.swp
+
+# Local env / secrets
+.env
+.env.local

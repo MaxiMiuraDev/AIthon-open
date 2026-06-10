@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p .claude/agents .claude/skills/aithon-research .claude/skills/aithon-build .claude/skills/aithon-pitch .claude/rules)",
+      "Edit(/.claude/skills/aithon-research/**)",
+      "Edit(/.claude/skills/aithon-build/**)",
+      "Edit(/.claude/skills/aithon-pitch/**)",
+      "Read(//c/Users/Usuario/.claude/projects/c--Users-Usuario-Desktop-Claudia-AIThon/memory/**)",
+      "WebSearch",
+      "WebFetch(domain:ipiec.tierradelfuego.gob.ar)",
+      "WebFetch(domain:www.google.com)",
+      "WebFetch(domain:datos.yvera.gob.ar)",
+      "Bash(python -c \"import openpyxl; print\\('openpyxl ok'\\)\")",
+      "Bash(pip install *)",
+      "Bash(python3)",
+      "Bash(PYTHONIOENCODING=utf-8 python3 -c ' *)",
+      "Bash(echo \"exit code: $?\")",
+      "Bash(python read_xlsx.py \"16_1_03_Crucerismo.xlsx\" 80)",
+      "Bash(python read_sheet.py \"16_1_01_Pernoctaciones.xlsx\" \"por mes 2024 en adelante\" 60)",
+      "Bash(python read_sheet.py \"16_1_01_Pernoctaciones.xlsx\" \"por a�o\" 60)",
+      "Bash(python read_sheet_idx.py \"16_1_01_Pernoctaciones.xlsx\" 3 60)",
+      "Bash(python read_xlsx.py \"16_1_02_PernoctesViajeros.xlsx\" 30)",
+      "Bash(gh auth *)",
+      "Bash(gh repo *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Usuario\\Desktop\\Claudia\\AIThon\\.claude"
+    ]
+  }
+}
