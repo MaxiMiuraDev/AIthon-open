@@ -98,7 +98,24 @@ export function loadPois(): POI[] {
 }
 
 export function loadRutas(): Ruta[] {
-  return parseOrThrow(RutasArraySchema, readJson("rutas.json"), "rutas.json");
+  const rutas = parseOrThrow(RutasArraySchema, readJson("rutas.json"), "rutas.json");
+
+  // Integridad referencial: los ids en rutas.pois deben existir en pois.json.
+  // Los schemas Zod validan forma, no referencias; sin esto, un id mal escrito
+  // produciría una ruta hidratada con POIs faltantes sin ningún error.
+  const poiIds = new Set(loadPois().map((p) => p.id));
+  const rotas = rutas.flatMap((r) =>
+    r.pois
+      .filter((pid) => !poiIds.has(pid))
+      .map((pid) => `  • ${r.id} → POI inexistente '${pid}'`)
+  );
+  if (rotas.length > 0) {
+    throw new Error(
+      `[data] rutas.json referencia POIs que no existen en pois.json:\n${rotas.join("\n")}`
+    );
+  }
+
+  return rutas;
 }
 
 export function loadClima(): Clima {
