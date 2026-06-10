@@ -1,16 +1,8 @@
 import { type NextRequest } from "next/server";
 import { loadPois } from "@/lib/data";
 import { respond, respondError } from "@/lib/api";
+import { CONDICIONES_CLIMA, normalizeClima } from "@/lib/clima";
 import type { CondicionClima } from "@/types";
-
-const CONDICIONES_VALIDAS: CondicionClima[] = ["Soleado", "Lluvioso", "Despejado"];
-
-function normalizeClima(raw: string): CondicionClima | null {
-  const s = raw.charAt(0).toUpperCase() + raw.slice(1).toLowerCase();
-  return CONDICIONES_VALIDAS.includes(s as CondicionClima)
-    ? (s as CondicionClima)
-    : null;
-}
 
 export function GET(request: NextRequest) {
   const sp = request.nextUrl.searchParams;
@@ -25,7 +17,7 @@ export function GET(request: NextRequest) {
     climaFilter = normalizeClima(climaRaw);
     if (!climaFilter) {
       return respondError(
-        `clima inválido. Valores aceptados: ${CONDICIONES_VALIDAS.join(", ")}`,
+        `clima inválido. Valores aceptados: ${CONDICIONES_CLIMA.join(", ")}`,
         400
       );
     }
